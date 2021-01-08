@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+import { BrowserRouter } from 'react-router-dom';
+import Routes from './routes';
 import { getChars, searchHero } from './services/api';
 const App = () => {
   const [searchField, setSearchField] = useState('');
@@ -43,7 +45,10 @@ const App = () => {
   return (
     <>
       <h1>Marvel Heroes</h1>
-      <section>
+      <BrowserRouter>
+        <Routes />
+      </BrowserRouter>
+      {/* <section>
         <form>
           <input
             type="text"
@@ -63,7 +68,7 @@ const App = () => {
           </ul>
         </section>
       )}
-      <button onClick={nextHeroes}>Mais</button>
+      <button onClick={nextHeroes}>Mais</button> */}
     </>
   );
 };
