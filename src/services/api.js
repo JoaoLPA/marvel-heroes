@@ -8,7 +8,7 @@ const hash = md5(
     process.env.REACT_APP_PUBLIC_KEY
 );
 
-export const getChars = async (offset, callback) => {
+export const getChars = async (offset = 0, callback) => {
   const charsUrl = `${baseURL}characters?ts=${timeStamp}&apikey=${process.env.REACT_APP_PUBLIC_KEY}&hash=${hash}&limit=10&offset=${offset}`;
   try {
     const api = await fetch(charsUrl);
