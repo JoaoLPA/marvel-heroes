@@ -28,7 +28,13 @@ const Initial = () => {
     });
   }
 
-  function handlePagination() {
+  function handlePagination(value) {
+    console.log(value);
+    if (value === 'forward') {
+      setHeroesOffset((value) => value + 10);
+    } else {
+      setHeroesOffset((value) => value - 10);
+    }
     setLoading(true);
     getHeroes(heroesOffset, (error, data) => {
       if (error) {
@@ -44,7 +50,9 @@ const Initial = () => {
 
   useEffect(() => {
     setLoading(true);
-    getHeroes(undefined, (error, data) => {
+    // const randomOffset = Math.round(Math.random() * 1483);
+    // setHeroesOffset(Math.round(randomOffset / 10));
+    getHeroes(heroesOffset, (error, data) => {
       if (error) {
         setLoading(false);
         return console.log(error);
@@ -87,10 +95,19 @@ const Initial = () => {
           </section>
         )
       )}
-      <button onClick={handlePagination} disabled={heroesOffset <= 10}>
+      <button
+        onClick={({ target }) => handlePagination(target.value)}
+        disabled={heroesOffset <= 10}
+        value="backward"
+      >
         menos
       </button>
-      <button onClick={handlePagination}>Mais</button>
+      <button
+        onClick={({ target }) => handlePagination(target.value)}
+        value="forward"
+      >
+        Mais
+      </button>
     </>
   );
 };
