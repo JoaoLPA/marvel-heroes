@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useContext } from 'react';
 import { GlobalContext } from '../../utils/GlobalContext';
+import { Link } from 'react-router-dom';
 import { getHeroes, searchHero } from '../../services/api';
 
 const Initial = () => {
@@ -29,7 +30,6 @@ const Initial = () => {
   }
 
   function handlePagination(value) {
-    console.log(value);
     if (value === 'forward') {
       setHeroesOffset((value) => value + 10);
     } else {
@@ -89,7 +89,9 @@ const Initial = () => {
           <section>
             <ul>
               {heroes.map((hero) => (
-                <li key={hero.id}>{hero.name}</li>
+                <Link to="/detail" key={hero.id}>
+                  <li>{hero.name}</li>
+                </Link>
               ))}
             </ul>
           </section>
