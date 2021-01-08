@@ -28,10 +28,10 @@ const Detail = () => {
           HQs que <strong>{heroInfo.name}</strong> aparece
         </h2>
         {comics.map((comic, index) => (
-          <p key={index}>
-            <span>{comic.resourceURI}</span>
-            <span>{comic.name}</span>
-          </p>
+          <div key={index}>
+            <img src={comic.resourceURI} alt="comic cover" />
+            <h3>{comic.name}</h3>
+          </div>
         ))}
       </section>
     </>
