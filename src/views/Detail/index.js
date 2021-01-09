@@ -1,12 +1,26 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useHistory } from 'react-router-dom';
 
+import { getComics } from '../../services/api';
 import Mock from './mockData.json';
 
 const Detail = () => {
   const [heroInfo, setHeroInfo] = useState(Mock.results[0]);
   const [comics] = useState([...heroInfo.comics.items]);
+  const [comicsInfo, setComicsInfo] = useState(undefined);
   const history = useHistory();
+
+  useEffect(() => {
+    const sliced = comics.slice(0, 2);
+    const list = sliced.map((url) => url.resourceURI);
+    getComics(list, (error, data) => {
+      if (data) {
+        setComicsInfo(data.map((hq) => hq.data.results[0]));
+      } else {
+        console.log(error);
+      }
+    });
+  }, []); //eslint-disable-line
 
   return (
     <>
@@ -27,10 +41,13 @@ const Detail = () => {
         <h2>
           HQs que <strong>{heroInfo.name}</strong> aparece
         </h2>
-        {comics.map((comic, index) => (
+        {comicsInfo.map((comic, index) => (
           <div key={index}>
-            <img src={comic.resourceURI} alt="comic cover" />
-            <h3>{comic.name}</h3>
+            <img
+              src={`${comic.thumbnail.path}/portrait_uncanny.jpg`}
+              alt="comic cover"
+            />
+            <h3>{comic.title}</h3>
           </div>
         ))}
       </section>
