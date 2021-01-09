@@ -41,15 +41,16 @@ const Detail = () => {
         <h2>
           HQs que <strong>{heroInfo.name}</strong> aparece
         </h2>
-        {comicsInfo.map((comic, index) => (
-          <div key={index}>
-            <img
-              src={`${comic.thumbnail.path}/portrait_uncanny.jpg`}
-              alt="comic cover"
-            />
-            <h3>{comic.title}</h3>
-          </div>
-        ))}
+        {comicsInfo &&
+          comicsInfo.map((comic, index) => (
+            <div key={index}>
+              <img
+                src={`${comic.thumbnail.path}/portrait_uncanny.jpg`}
+                alt="comic cover"
+              />
+              <h3>{comic.title}</h3>
+            </div>
+          ))}
       </section>
     </>
   );

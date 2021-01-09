@@ -3,6 +3,8 @@ import { GlobalContext } from '../../utils/GlobalContext';
 import { Link } from 'react-router-dom';
 import { getHeroes, searchHero } from '../../services/api';
 
+import mockData from './mockData.json';
+
 const Initial = () => {
   const {
     loading,
@@ -49,19 +51,18 @@ const Initial = () => {
   }
 
   useEffect(() => {
-    setLoading(true);
-    // const randomOffset = Math.round(Math.random() * 1483);
-    // setHeroesOffset(Math.round(randomOffset / 10));
-    getHeroes(heroesOffset, (error, data) => {
-      if (error) {
-        setLoading(false);
-        return console.log(error);
-      }
-      if (data) {
-        setLoading(false);
-        return setHeroes(data);
-      }
-    });
+    // setLoading(true);
+    // getHeroes(heroesOffset, (error, data) => {
+    //   if (error) {
+    //     setLoading(false);
+    //     return console.log(error);
+    //   }
+    //   if (data) {
+    //     setLoading(false);
+    //     return setHeroes(data);
+    //   }
+    // });
+    setHeroes(mockData);
   }, []); //eslint-disable-line
 
   return (

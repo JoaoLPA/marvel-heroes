@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { BrowserRouter } from 'react-router-dom';
 import { GlobalStorage } from './utils/GlobalContext';
 import Routes from './routes';
+import './styles/global.scss';
 const App = () => {
   return (
     <>
