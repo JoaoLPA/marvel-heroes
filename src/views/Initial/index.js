@@ -31,9 +31,9 @@ const Initial = () => {
 
   function handlePagination(value) {
     if (value === 'forward') {
-      setHeroesOffset((value) => value + 10);
+      setHeroesOffset((offset) => offset + 10);
     } else {
-      setHeroesOffset((value) => value - 10);
+      setHeroesOffset((offset) => offset - 10);
     }
     setLoading(true);
     getHeroes(heroesOffset, (error, data) => {
@@ -87,19 +87,23 @@ const Initial = () => {
       ) : (
         heroes && (
           <section>
-            <ul>
-              {heroes.map((hero) => (
-                <Link to="/detail" key={hero.id}>
-                  <li>{hero.name}</li>
+            {heroes.map((hero) => (
+              <div key={hero.id}>
+                <Link to="/detail">
+                  <img
+                    src={`${hero.thumbnail.path}/portrait_uncanny.jpg`}
+                    alt="Hero portrait"
+                  />
+                  <h3>{hero.name}</h3>
                 </Link>
-              ))}
-            </ul>
+              </div>
+            ))}
           </section>
         )
       )}
       <button
         onClick={({ target }) => handlePagination(target.value)}
-        disabled={heroesOffset <= 10}
+        disabled={heroesOffset < 10}
         value="backward"
       >
         menos
