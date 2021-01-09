@@ -4,7 +4,9 @@ import { Link } from 'react-router-dom';
 import { getHeroes, searchHero } from '../../services/api';
 
 import PageTitle from '../../components/PageTitle';
+import HeroCard from '../../components/HeroCard';
 
+import styles from './styles.module.scss';
 import mockData from './mockData.json';
 
 const Initial = () => {
@@ -86,26 +88,34 @@ const Initial = () => {
           ''
         )}
       </form>
-      {loading ? (
-        <h3>carregando</h3>
-      ) : (
-        <p>a</p>
-        // heroes && (
-        //   <section>
-        //     {heroes.map((hero) => (
-        //       <div key={hero.id}>
-        //         <Link to="/detail">
-        //           <img
-        //             src={`${hero.thumbnail.path}/portrait_uncanny.jpg`}
-        //             alt="Hero portrait"
-        //           />
-        //           <h3>{hero.name}</h3>
-        //         </Link>
-        //       </div>
-        //     ))}
-        //   </section>
-        // )
-      )}
+      <div className={styles.cardContainer}>
+        {loading ? (
+          <h3>carregando</h3>
+        ) : (
+          <>
+            <HeroCard />
+            <HeroCard />
+            <HeroCard />
+            <HeroCard />
+            <HeroCard />
+          </>
+          // heroes && (
+          //   <section>
+          //     {heroes.map((hero) => (
+          //       <div key={hero.id}>
+          //         <Link to="/detail">
+          //           <img
+          //             src={`${hero.thumbnail.path}/portrait_uncanny.jpg`}
+          //             alt="Hero portrait"
+          //           />
+          //           <h3>{hero.name}</h3>
+          //         </Link>
+          //       </div>
+          //     ))}
+          //   </section>
+          // )
+        )}
+      </div>
       <button
         onClick={({ target }) => handlePagination(target.value)}
         disabled={heroesOffset < 10}

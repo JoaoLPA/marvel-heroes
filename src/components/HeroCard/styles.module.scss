@@ -1,0 +1,44 @@
+@import '../../styles/colors.scss';
+
+.card {
+  width: 212px;
+  height: 400px;
+  background-color: $gray1;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: all 0.15s ease-in-out;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+
+    &:nth-child(even) {
+    position: relative;
+    top: 20px;
+
+    &:hover {
+      transform: scale(1.05);
+  }
+  }
+}
+.heroName {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 100%;
+  opacity: 0;
+  padding-bottom: 3rem;
+  transform: scale(1);
+  transition: opacity 0.2s ease-in;
+  h3{
+    filter: drop-shadow(0 2px 3px $primary);
+    max-width: 32ch;
+  }
+
+  &:hover {
+    opacity: 1;
+  }
+
+
+}

@@ -20,7 +20,7 @@ body {
 
 body, button, input {
   font-size: 1rem;
-  font-family: sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 button {
@@ -29,6 +29,30 @@ button {
 
 h1, h2, h3, h4, p {
   margin: 0;
+}
+
+h1, h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+h1 {
+  font-size: clamp(1.2rem, 3vw, 1.875rem);
+}
+
+h2 {
+  font-size: clamp(1,125rem, 3vw, 1.6875rem);
+}
+
+h3, p {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: clamp(1.025rem, 3vw, 1.125rem);
+}
+
+h3 {
+  font-weight: 700;
+  letter-spacing: 0.1em;
 }
 
 ul, li {
