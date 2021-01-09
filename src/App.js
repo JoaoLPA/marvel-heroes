@@ -3,9 +3,12 @@ import { BrowserRouter } from 'react-router-dom';
 import { GlobalStorage } from './utils/GlobalContext';
 import Routes from './routes';
 import './styles/global.scss';
+
+import Head from './components/Head';
 const App = () => {
   return (
     <>
+      <Head />
       <h1>Marvel Heroes</h1>
       <GlobalStorage>
         <BrowserRouter>

@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { useHistory } from 'react-router-dom';
 
 import { getComics } from '../../services/api';
+
+import PageTitle from '../../components/PageTitle';
 import Mock from './mockData.json';
 
 const Detail = () => {
@@ -24,6 +26,7 @@ const Detail = () => {
 
   return (
     <>
+      <PageTitle title={`Marvel - ${heroInfo.name}`} />
       <h1>{heroInfo.name}</h1>
       <img
         src={`${heroInfo.thumbnail.path}/portrait_uncanny.jpg`}

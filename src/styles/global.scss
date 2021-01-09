@@ -12,7 +12,8 @@
 }
 
 body {
-  background-color: $black;
+  min-height: 100vh;
+  background: linear-gradient($red1, $black 90%) no-repeat;
   color: $white;
   -webkit-font-smoothing: antialiased;
 }

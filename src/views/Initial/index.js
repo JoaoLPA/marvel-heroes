@@ -3,6 +3,8 @@ import { GlobalContext } from '../../utils/GlobalContext';
 import { Link } from 'react-router-dom';
 import { getHeroes, searchHero } from '../../services/api';
 
+import PageTitle from '../../components/PageTitle';
+
 import mockData from './mockData.json';
 
 const Initial = () => {
@@ -67,6 +69,7 @@ const Initial = () => {
 
   return (
     <>
+      <PageTitle title="Marvel Heroes" />
       <header>
         <h1>Explore HQs com seus personagens preferidos</h1>
       </header>
@@ -86,21 +89,22 @@ const Initial = () => {
       {loading ? (
         <h3>carregando</h3>
       ) : (
-        heroes && (
-          <section>
-            {heroes.map((hero) => (
-              <div key={hero.id}>
-                <Link to="/detail">
-                  <img
-                    src={`${hero.thumbnail.path}/portrait_uncanny.jpg`}
-                    alt="Hero portrait"
-                  />
-                  <h3>{hero.name}</h3>
-                </Link>
-              </div>
-            ))}
-          </section>
-        )
+        <p>a</p>
+        // heroes && (
+        //   <section>
+        //     {heroes.map((hero) => (
+        //       <div key={hero.id}>
+        //         <Link to="/detail">
+        //           <img
+        //             src={`${hero.thumbnail.path}/portrait_uncanny.jpg`}
+        //             alt="Hero portrait"
+        //           />
+        //           <h3>{hero.name}</h3>
+        //         </Link>
+        //       </div>
+        //     ))}
+        //   </section>
+        // )
       )}
       <button
         onClick={({ target }) => handlePagination(target.value)}
