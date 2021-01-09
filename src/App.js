@@ -9,7 +9,6 @@ const App = () => {
   return (
     <>
       <Head />
-      <h1>Marvel Heroes</h1>
       <GlobalStorage>
         <BrowserRouter>
           <Routes />

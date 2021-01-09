@@ -3,6 +3,7 @@ import { GlobalContext } from '../../utils/GlobalContext';
 import { Link } from 'react-router-dom';
 import { getHeroes, searchHero } from '../../services/api';
 
+import { ReactComponent as Logo } from '../../assets/MarvelTransparent.svg';
 import PageTitle from '../../components/PageTitle';
 import HeroCard from '../../components/HeroCard';
 
@@ -73,9 +74,9 @@ const Initial = () => {
     <>
       <PageTitle title="Marvel Heroes" />
       <header>
-        <h1>Explore HQs com seus personagens preferidos</h1>
+        <Logo />
       </header>
-      <form>
+      <form style={{ marginTop: '150px' }}>
         <input
           type="text"
           value={searchField}
