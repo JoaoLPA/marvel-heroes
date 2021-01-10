@@ -4,29 +4,33 @@ import { useHistory } from 'react-router-dom';
 import { getComics } from '../../services/api';
 
 import PageTitle from '../../components/PageTitle';
+import Header from '../../components/Header';
 import Mock from './mockData.json';
+import Comics from './comicsInfoMock.json';
 
 const Detail = () => {
   const [heroInfo, setHeroInfo] = useState(Mock.results[0]);
   const [comics] = useState([...heroInfo.comics.items]);
-  const [comicsInfo, setComicsInfo] = useState(undefined);
+  // const [comicsInfo, setComicsInfo] = useState(undefined);
+  const [comicsInfo, setComicsInfo] = useState([...Comics.results]);
   const history = useHistory();
 
-  useEffect(() => {
-    const sliced = comics.slice(0, 2);
-    const list = sliced.map((url) => url.resourceURI);
-    getComics(list, (error, data) => {
-      if (data) {
-        setComicsInfo(data.map((hq) => hq.data.results[0]));
-      } else {
-        console.log(error);
-      }
-    });
-  }, []); //eslint-disable-line
+  // useEffect(() => {
+  //   const sliced = comics.slice(0, 2);
+  //   const list = sliced.map((url) => url.resourceURI);
+  //   getComics(list, (error, data) => {
+  //     if (data) {
+  //       setComicsInfo(data.map((hq) => hq.data.results[0]));
+  //     } else {
+  //       console.log(error);
+  //     }
+  //   });
+  // }, []); //eslint-disable-line
 
   return (
     <>
       <PageTitle title={`Marvel - ${heroInfo.name}`} />
+      <Header color="#FFF" />
       <h1>{heroInfo.name}</h1>
       <img
         src={`${heroInfo.thumbnail.path}/portrait_uncanny.jpg`}

@@ -7,6 +7,7 @@ import { ReactComponent as Logo } from '../../assets/MarvelTransparent.svg';
 import { ReactComponent as Search } from '../../assets/u_search.svg';
 import { ReactComponent as ArrowLeft } from '../../assets/fi_arrow-left.svg';
 import { ReactComponent as ArrowRight } from '../../assets/fi_arrow-right.svg';
+import Header from '../../components/Header';
 import PageTitle from '../../components/PageTitle';
 import HeroCard from '../../components/HeroCard';
 
@@ -48,7 +49,11 @@ const Initial = () => {
   function handleForwardPagination() {
     setHeroes(undefined);
     setLoading(true);
-    setHeroesOffset((value) => value + 5);
+    if (heroesOffset === 0) {
+      setHeroesOffset(5);
+    } else {
+      setHeroesOffset((value) => value + 5);
+    }
     getHeroes(heroesOffset, (error, data) => {
       if (error) {
         setLoading(false);
@@ -90,14 +95,13 @@ const Initial = () => {
       }
     });
     // setHeroes(mockData);
+    return setHeroesOffset(5);
   }, []); //eslint-disable-line
 
   return (
     <>
       <PageTitle title="Marvel Heroes" />
-      <header>
-        <Logo />
-      </header>
+      <Header />
       <div className={styles.wrapper}>
         <section className={styles.title}>
           <h1>Explore HQs com seus personagens preferidos</h1>
