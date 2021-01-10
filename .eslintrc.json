@@ -47,7 +47,7 @@
       }
     ],
     "react/prop-types": [
-      1,
+      0,
       {
         "ignore": [
           "children"

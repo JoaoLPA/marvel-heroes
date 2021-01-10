@@ -1,0 +1,128 @@
+@import '../../styles/colors.scss';
+
+.wrapper {
+  max-width: 1200px;
+  margin: 120px auto 0;
+  padding-right: 12px;
+  padding-left: 12px;
+  min-height: calc(100vh - 152px);
+  position: relative;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+.heroSearch{
+  padding: 25px;
+
+  .iconWrapper{
+    flex-shrink: 1;
+    input{
+      border-radius: 32px;
+      outline: none;
+      border: solid 2px rgba($primary, 0);
+      padding: 14px 10px;
+      padding-left: 50px;
+      min-width: 380px;
+      margin: 0 auto;
+
+      &::placeholder {
+        color: $gray1;
+      }
+
+      &:focus{
+        border: solid 2px $primary;
+        box-shadow: 0 0 15px rgba($primary, 0.5), 0 5px 25px rgba($primary, 0.2);
+      }
+    }
+
+    svg {
+      position: relative;
+      right: 50;
+      top: 13px;
+      width: 32px;
+  }
+  }
+
+  .buttonContainer {
+    margin: 12px auto 0;
+    display: flex;
+    justify-content: center;
+
+    button {
+      margin: 0 12px;
+      padding: 8px 32px;
+      border-radius: 16px;
+      outline: 0;
+      border: 0;
+      color: $white;
+      background-color: $primary;
+      transition: all 0.1s ease-in;
+
+      &:hover {
+        background-color: darken($primary, 5.5);
+        box-shadow: 0 4px 12px lighten($red1, 10);
+      }
+    }
+
+  }
+}
+
+.cardContainer {
+  max-width: 1204px;
+  min-height: 450px;
+  margin: 2rem auto;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 25px;
+  padding-bottom: 25px;
+
+  a {
+    color: $white;
+
+    &:nth-child(even) {
+      position: relative;
+      top: 20px;
+        &:hover {
+          transform: scale(1.05);
+        }
+  }
+  }
+}
+
+.pagination {
+  display: flex;
+  justify-content: space-between;
+
+  button {
+    background-color: transparent;
+    border: 2px solid $primary;
+    border-radius: 50%;
+    padding: 2px 4px;
+    outline: none;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      transform: scale(1.1);
+      background-color: $primary;
+      border: 2px solid $red1;
+      svg {
+        path {
+
+          stroke: $red1;
+        }
+      }
+    }
+  }
+
+  svg {
+    position: relative;
+    top: 2px;
+  }
+}
+
+
+

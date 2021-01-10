@@ -1,0 +1,107 @@
+@import './colors.scss';
+
+:root {
+  font-size: 16px;
+}
+
+* {
+  box-sizing: border-box;
+  outline: 0;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  min-height: 100%;
+}
+
+body {
+  background: linear-gradient($red1, $black 90%) no-repeat;
+  color: $white;
+  -webkit-font-smoothing: antialiased;
+}
+
+body, button, input {
+  font-size: 1rem;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
+
+h1, h2, h3, h4, p {
+  margin: 0;
+}
+
+h1, h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+h1 {
+  font-size: clamp(1.2rem, 3vw, 1.875rem);
+}
+
+h2 {
+  font-size: clamp(1.125rem, 3vw, 1.6875rem);
+}
+
+h3, p {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: clamp(1.025rem, 3vw, 1.125rem);
+}
+
+h3 {
+  font-weight: 700;
+  letter-spacing: 0.1em;
+}
+
+ul, li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+button, input {
+  display: block;
+  font-size: 1rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+footer {
+  height: 32px;
+  // margin: -32px;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: $black;
+  p {
+    font-size: 0.875rem;
+    color: $gray2;
+  }
+}
+
+.screenReader{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}

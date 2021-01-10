@@ -9,8 +9,11 @@ const hash = md5(
 );
 const baseAuth = `ts=${timeStamp}&apikey=${process.env.REACT_APP_PUBLIC_KEY}&hash=${hash}`;
 
-export const getHeroes = async (offset = 0, callback) => {
-  const charsUrl = `${baseURL}characters?${baseAuth}&limit=10&offset=${offset}`;
+export const getHeroes = async (offset, callback) => {
+  let charsUrl = `${baseURL}characters?${baseAuth}&limit=5`;
+  if (offset) {
+    charsUrl = `${baseURL}characters?${baseAuth}&limit=5&offset=${offset}`;
+  }
   try {
     const api = await fetch(charsUrl);
     const response = await api.json();
