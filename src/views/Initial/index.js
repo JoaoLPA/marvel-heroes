@@ -3,7 +3,6 @@ import { GlobalContext } from '../../utils/GlobalContext';
 import { Link } from 'react-router-dom';
 import { getHeroes, searchHero } from '../../services/api';
 
-import { ReactComponent as Logo } from '../../assets/MarvelTransparent.svg';
 import { ReactComponent as Search } from '../../assets/u_search.svg';
 import { ReactComponent as ArrowLeft } from '../../assets/fi_arrow-left.svg';
 import { ReactComponent as ArrowRight } from '../../assets/fi_arrow-right.svg';
@@ -12,7 +11,6 @@ import PageTitle from '../../components/PageTitle';
 import HeroCard from '../../components/HeroCard';
 
 import styles from './styles.module.scss';
-import mockData from './mockData.json';
 
 const Initial = () => {
   const {
@@ -47,7 +45,6 @@ const Initial = () => {
   }
 
   function handleForwardPagination() {
-    setHeroes(undefined);
     setLoading(true);
     if (heroesOffset === 0) {
       setHeroesOffset(5);
@@ -67,7 +64,6 @@ const Initial = () => {
   }
 
   function handleBackwardPagination() {
-    setHeroes(undefined);
     setLoading(true);
     setHeroesOffset((value) => value - 5);
     getHeroes(heroesOffset, (error, data) => {
@@ -94,7 +90,6 @@ const Initial = () => {
         return setHeroes(data);
       }
     });
-    // setHeroes(mockData);
     return setHeroesOffset(5);
   }, []); //eslint-disable-line
 
@@ -108,13 +103,13 @@ const Initial = () => {
         </section>
         <form className={styles.heroSearch}>
           <div className={styles.iconWrapper}>
-            {/* <Search /> */}
             <input
               type="text"
               value={searchField}
               onChange={({ target }) => setSearchField(target.value)}
               placeholder="Buscar personagem"
             />
+            <Search />
           </div>
           <div className={styles.buttonContainer}>
             <button onClick={handleClean}>Limpar</button>
@@ -127,9 +122,14 @@ const Initial = () => {
           ) : (
             heroes &&
             heroes.map((hero) => (
-              <Link to="/detail" key={hero.id}>
+              <Link
+                to={{
+                  pathname: `/detail/${hero.id}`,
+                  state: { ...hero }
+                }}
+                key={hero.id}
+              >
                 <HeroCard
-                  key={hero.id}
                   thumb={hero.thumbnail.path}
                   name={hero.name}
                 />

@@ -17,8 +17,14 @@
 
 .heroSearch{
   padding: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 
   .iconWrapper{
+    position: relative;
+    max-width: 380px;
     flex-shrink: 1;
     input{
       border-radius: 32px;
@@ -40,9 +46,9 @@
     }
 
     svg {
-      position: relative;
-      right: 50;
-      top: 13px;
+      position: absolute;
+      left: 14px;
+      top: 14px;
       width: 32px;
   }
   }

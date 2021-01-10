@@ -5,19 +5,21 @@ import { getComics } from '../../services/api';
 
 import PageTitle from '../../components/PageTitle';
 import Header from '../../components/Header';
-import Mock from './mockData.json';
 import { ReactComponent as ChevronLeft } from '../../assets/fi_chevron-left.svg';
 import { ReactComponent as Book } from '../../assets/fi_book-open.svg';
 import styles from './styles.module.scss';
 
-const Detail = () => {
-  const [heroInfo, setHeroInfo] = useState(Mock.results[0]);
+const Detail = ({ location }) => {
+  const [heroInfo] = useState(location.state);
   const [comics] = useState([...heroInfo.comics.items]);
   const [comicsInfo, setComicsInfo] = useState(undefined);
   const history = useHistory();
 
+  const heroState = location.state;
+  console.log(heroState);
+
   useEffect(() => {
-    const sliced = comics.slice(0, 5);
+    const sliced = comics.slice(0, 8);
     const list = sliced.map((url) => url.resourceURI);
     getComics(list, (error, data) => {
       if (data) {
