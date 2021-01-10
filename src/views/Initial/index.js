@@ -45,13 +45,26 @@ const Initial = () => {
     setSearchField('');
   }
 
-  function handlePagination(value) {
-    if (value === 'forward') {
-      setHeroesOffset((offset) => offset + 10);
-    } else {
-      setHeroesOffset((offset) => offset - 10);
-    }
+  function handleForwardPagination() {
+    setHeroes(undefined);
     setLoading(true);
+    setHeroesOffset((value) => value + 5);
+    getHeroes(heroesOffset, (error, data) => {
+      if (error) {
+        setLoading(false);
+        return console.log(error);
+      }
+      if (data) {
+        setLoading(false);
+        return setHeroes(data);
+      }
+    });
+  }
+
+  function handleBackwardPagination() {
+    setHeroes(undefined);
+    setLoading(true);
+    setHeroesOffset((value) => value - 5);
     getHeroes(heroesOffset, (error, data) => {
       if (error) {
         setLoading(false);
@@ -65,18 +78,18 @@ const Initial = () => {
   }
 
   useEffect(() => {
-    // setLoading(true);
-    // getHeroes(heroesOffset, (error, data) => {
-    //   if (error) {
-    //     setLoading(false);
-    //     return console.log(error);
-    //   }
-    //   if (data) {
-    //     setLoading(false);
-    //     return setHeroes(data);
-    //   }
-    // });
-    setHeroes(mockData);
+    setLoading(true);
+    getHeroes(heroesOffset, (error, data) => {
+      if (error) {
+        setLoading(false);
+        return console.log(error);
+      }
+      if (data) {
+        setLoading(false);
+        return setHeroes(data);
+      }
+    });
+    // setHeroes(mockData);
   }, []); //eslint-disable-line
 
   return (
@@ -108,42 +121,26 @@ const Initial = () => {
           {loading ? (
             <h3>carregando</h3>
           ) : (
-            <>
-              <HeroCard />
-              <HeroCard />
-              <HeroCard />
-              <HeroCard />
-              <HeroCard />
-            </>
-            // heroes && (
-            //   <section>
-            //     {heroes.map((hero) => (
-            //       <div key={hero.id}>
-            //         <Link to="/detail">
-            //           <img
-            //             src={`${hero.thumbnail.path}/portrait_uncanny.jpg`}
-            //             alt="Hero portrait"
-            //           />
-            //           <h3>{hero.name}</h3>
-            //         </Link>
-            //       </div>
-            //     ))}
-            //   </section>
-            // )
+            heroes &&
+            heroes.map((hero) => (
+              <Link to="/detail" key={hero.id}>
+                <HeroCard
+                  key={hero.id}
+                  thumb={hero.thumbnail.path}
+                  name={hero.name}
+                />
+              </Link>
+            ))
           )}
         </div>
         <div className={styles.pagination}>
           <button
-            onClick={({ target }) => handlePagination(target.value)}
-            disabled={heroesOffset < 10}
-            value="backward"
+            onClick={handleBackwardPagination}
+            disabled={heroesOffset < 5}
           >
             <ArrowLeft />
           </button>
-          <button
-            onClick={({ target }) => handlePagination(target.value)}
-            value="forward"
-          >
+          <button onClick={handleForwardPagination}>
             <ArrowRight />
           </button>
         </div>

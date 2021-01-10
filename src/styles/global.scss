@@ -87,4 +87,8 @@ footer {
   display: flex;
   justify-content: center;
   margin-top: -50px;
+  p {
+    font-size: 0.875rem;
+    color: $gray2;
+  }
 }

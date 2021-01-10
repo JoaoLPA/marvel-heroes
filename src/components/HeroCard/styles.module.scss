@@ -29,15 +29,8 @@
       opacity: 1;
     }
   }
-
-  &:nth-child(even) {
-  position: relative;
-  top: 20px;
-    &:hover {
-      transform: scale(1.05);
-    }
-  }
 }
+
 .heroName {
   display: flex;
   justify-content: center;
