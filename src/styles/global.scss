@@ -11,8 +11,11 @@
   padding: 0;
 }
 
+html, body {
+  min-height: 100%;
+}
+
 body {
-  min-height: 100vh;
   background: linear-gradient($red1, $black 90%) no-repeat;
   color: $white;
   -webkit-font-smoothing: antialiased;
@@ -73,4 +76,15 @@ button, input {
 
 a {
   text-decoration: none;
+}
+
+footer {
+  height: 32px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: -50px;
 }

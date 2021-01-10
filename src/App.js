@@ -14,6 +14,9 @@ const App = () => {
           <Routes />
         </BrowserRouter>
       </GlobalStorage>
+      <footer>
+        <p>2021 MARVEL && JOÃO L. P. ALVES</p>
+      </footer>
     </>
   );
 };
