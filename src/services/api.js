@@ -14,7 +14,6 @@ export const getHeroes = async (offset, callback) => {
   if (offset) {
     charsUrl = `${baseURL}characters?${baseAuth}&limit=5&offset=${offset}`;
   }
-  console.log(offset);
   try {
     const api = await fetch(charsUrl);
     const response = await api.json();

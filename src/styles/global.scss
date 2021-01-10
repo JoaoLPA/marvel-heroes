@@ -45,7 +45,7 @@ h1 {
 }
 
 h2 {
-  font-size: clamp(1,125rem, 3vw, 1.6875rem);
+  font-size: clamp(1.125rem, 3vw, 1.6875rem);
 }
 
 h3, p {
@@ -80,15 +80,28 @@ a {
 
 footer {
   height: 32px;
-  position: fixed;
+  // margin: -32px;
+  position: relative;
   bottom: 0;
   left: 0;
+  right: 0;
   width: 100%;
   display: flex;
   justify-content: center;
-  margin-top: -50px;
+  background-color: $black;
   p {
     font-size: 0.875rem;
     color: $gray2;
   }
+}
+
+.screenReader{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
 }

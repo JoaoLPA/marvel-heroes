@@ -5,6 +5,8 @@
   margin: 120px auto 0;
   padding-right: 12px;
   padding-left: 12px;
+  min-height: calc(100vh - 152px);
+  position: relative;
 }
 
 .title {

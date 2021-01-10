@@ -9,6 +9,7 @@
   padding-top: 48px;
   margin-top: 110px;
   background-color: $black;
+  position: relative;
 }
 
 .goBackButton {
@@ -52,15 +53,81 @@
     background-position: center;
     margin-right: 35px;
 
-    img {
-      position: absolute;
-      width: 1px;
-      height: 1px;
-      padding: 0;
-      margin: -1px;
-      overflow: hidden;
-      clip: rect(0, 0, 0, 0);
-      border: 0;
+    // img {
+    //   position: absolute;
+    //   width: 1px;
+    //   height: 1px;
+    //   padding: 0;
+    //   margin: -1px;
+    //   overflow: hidden;
+    //   clip: rect(0, 0, 0, 0);
+    //   border: 0;
+    // }
+  }
+}
+
+.comicsDisplay{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+
+.comicsSection {
+  margin-top: 69px;
+  padding-left: 85px;
+  padding-right: 85px;
+
+  .comicContainer{
+    position: relative;
+  }
+
+  .comicsTitle {
+    display: flex;
+    margin-bottom: 36px;
+
+    svg {
+      margin-right: 14px;
+    }
+  }
+
+  .comicCover {
+    width: 192px;
+    height: 286px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    backface-visibility: hidden;
+    transform-origin: center;
+    transition: all 1s ease;
+    transform-style: preserve-3d;
+    margin-left: 6px;
+    margin-right: 6px;
+    margin-bottom: 32px;
+  }
+
+  .comicDetails{
+    width: 192px;
+    height: 286px;
+    background-color: $primary;
+    position: absolute;
+    top: 0;
+    left: 6px;
+    transform-origin: bottom;
+    transition: opacity 1s ease;
+    padding: 6px;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h3 {
+      text-align: center;
+    }
+
+    &:hover {
+      opacity: 1;
     }
   }
 }
