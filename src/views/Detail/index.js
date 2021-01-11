@@ -12,8 +12,6 @@ import { ReactComponent as ChevronLeft } from '../../assets/fi_chevron-left.svg'
 import { ReactComponent as Book } from '../../assets/fi_book-open.svg';
 import styles from './styles.module.scss';
 
-import ComicsInfoMock from './comicsInfoMock.json';
-
 const Detail = ({ location }) => {
   const { loading, setLoading } = useContext(GlobalContext);
 
