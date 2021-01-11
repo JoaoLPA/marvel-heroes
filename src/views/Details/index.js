@@ -83,8 +83,7 @@ const Details = ({ location }) => {
           <div className={styles.comicsTitle}>
             <Book />
             <h2>
-              HQs que <strong>{heroInfo.name}</strong> aparece (
-              {location.state.comics.available})
+              HQs que <strong>{heroInfo.name}</strong> aparece
             </h2>
           </div>
           <div className={styles.comicsDisplay}>

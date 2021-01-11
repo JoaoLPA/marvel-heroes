@@ -35,8 +35,9 @@ export const searchHero = async (hero, callback) => {
 };
 
 export const getComics = async (list, callback) => {
-  const comicsUrl = list.map((baseURL) => baseURL + '?' + baseAuth);
-
+  const comicsUrl = list.map(
+    (baseURL) => baseURL.replace('http', 'https') + '?' + baseAuth
+  );
   try {
     const api = await Promise.all(
       comicsUrl.map((request) =>
