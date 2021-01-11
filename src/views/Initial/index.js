@@ -125,7 +125,7 @@ const Initial = () => {
             heroes.map((hero) => (
               <Link
                 to={{
-                  pathname: `/detail/${hero.id}`,
+                  pathname: `/details/${hero.id}`,
                   state: { ...hero }
                 }}
                 key={hero.id}
