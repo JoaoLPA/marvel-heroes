@@ -93,7 +93,10 @@ const Details = ({ location }) => {
                     }}
                   >
                     <img
-                      src={`${comic.thumbnail.path}/portrait_uncanny.jpg`}
+                      src={`${comic.thumbnail.path.replace(
+                        'http',
+                        'https'
+                      )}/portrait_uncanny.jpg`}
                       alt="comic cover"
                       className="screenReader"
                     />
