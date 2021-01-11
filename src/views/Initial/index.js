@@ -116,8 +116,18 @@ const Initial = () => {
             <Search />
           </div>
           <div className={styles.buttonContainer}>
-            <button onClick={handleClean}>Limpar</button>
-            <button onClick={handleSubmit}>Buscar</button>
+            <button
+              onClick={handleClean}
+              className={styles.cleanButton}
+            >
+              Limpar
+            </button>
+            <button
+              onClick={handleSubmit}
+              className={styles.searchButton}
+            >
+              Buscar
+            </button>
           </div>
         </form>
         <div className={styles.cardContainer}>

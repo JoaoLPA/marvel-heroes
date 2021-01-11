@@ -56,23 +56,6 @@
     margin: 12px auto 0;
     display: flex;
     justify-content: center;
-
-    button {
-      margin: 0 12px;
-      padding: 8px 32px;
-      border-radius: 16px;
-      outline: 0;
-      border: 0;
-      color: $white;
-      background-color: $primary;
-      transition: all 0.1s ease-in;
-
-      &:hover {
-        background-color: darken($primary, 5.5);
-        box-shadow: 0 4px 12px lighten($red1, 10);
-      }
-    }
-
   }
 }
 
@@ -81,7 +64,8 @@
   min-height: 450px;
   margin: 2rem auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  flex-wrap: wrap;
   padding-top: 25px;
   padding-bottom: 25px;
 
@@ -101,6 +85,9 @@
 .pagination {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 32px;
+  margin-left: 16px;
+  margin-right: 16px;
 
   button {
     background-color: transparent;
@@ -129,6 +116,31 @@
   }
 }
 
+.cleanButton, .searchButton{
+    margin: 0 12px;
+    padding: 8px 32px;
+    border-radius: 16px;
+    outline: 0;
+    border: 0;
+    color: $white;
+    transition: all 0.1s ease-in;
+  }
+
+  .cleanButton {
+    background-color: $gray2;
+    &:hover {
+      background-color: darken($gray2, 5.5);
+      box-shadow: 0 4px 12px rgba($gray2, 0.5);
+    }
+  }
+  .searchButton {
+  background-color: $primary;
+  &:hover {
+      background-color: darken($primary, 5.5);
+      box-shadow: 0 4px 12px lighten($red1, 10);
+    }
+}
+
 
 @media only screen and (max-width: 576px) {
   .title {
@@ -137,4 +149,23 @@
       text-align: center;
     }
   }
+  .cardContainer {
+    justify-content: center;
+    a {
+      width: 100%
+    }
+  }
+}
+
+@media only screen and (max-width: 1150px) {
+
+.cardContainer {
+  a {
+    margin-bottom: 32px;
+    &:nth-child(even) {
+      position: relative;
+      top: 0;
+    }
+  }
+}
 }
