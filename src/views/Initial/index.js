@@ -40,6 +40,12 @@ const Initial = () => {
     });
   }
 
+  function handleKeyPress(event) {
+    if (event.key === 'Enter') {
+      handleSubmit();
+    }
+  }
+
   function handleClean() {
     event.preventDefault();
     setSearchField('');
@@ -108,6 +114,7 @@ const Initial = () => {
               type="text"
               value={searchField}
               onChange={({ target }) => setSearchField(target.value)}
+              onKeyPress={(event) => handleKeyPress(event)}
               placeholder="Buscar personagem"
             />
             <Search />
