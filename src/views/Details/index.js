@@ -39,26 +39,34 @@ const Details = ({ location }) => {
       <PageTitle title={`Marvel - ${heroInfo.name}`} />
       <Header color="#FFF" />
       <div className={styles.detailsBackground}>
-        <section className={styles.description}>
+        <section className={styles.details}>
           <button
             className={styles.goBackButton}
             onClick={history.goBack}
           >
             <ChevronLeft />
           </button>
-          <figure
-            className={styles.heroPortrait}
-            style={{
-              backgroundImage: `url(${heroInfo.thumbnail.path}/portrait_uncanny.jpg)`
-            }}
-          >
-            <img
-              src={`${heroInfo.thumbnail.path}/portrait_uncanny.jpg`}
-              alt={`${heroInfo.name} portrait`}
-              className="screenReader"
-            />
-          </figure>
-          <section>
+          <div>
+            <figure
+              className={styles.heroPortrait}
+              style={{
+                backgroundImage: `url(${heroInfo.thumbnail.path.replace(
+                  'http',
+                  'https'
+                )}/portrait_uncanny.jpg)`
+              }}
+            >
+              <img
+                src={`${heroInfo.thumbnail.path.replace(
+                  'http',
+                  'https'
+                )}/portrait_uncanny.jpg`}
+                alt={`${heroInfo.name} portrait`}
+                className="screenReader"
+              />
+            </figure>
+          </div>
+          <div className={styles.titleAndDescription}>
             <div className={styles.heroName}>
               <h1>{heroInfo.name}</h1>
             </div>
@@ -69,7 +77,7 @@ const Details = ({ location }) => {
                 <NoDescription />
               )}
             </div>
-          </section>
+          </div>
         </section>
         <section className={styles.comicsSection}>
           <div className={styles.comicsTitle}>
@@ -89,7 +97,10 @@ const Details = ({ location }) => {
                   <figure
                     className={styles.comicCover}
                     style={{
-                      backgroundImage: `linear-gradient(to top, rgba(0, 0, 0, 0.5) 10%, rgba(255, 255, 255, 0) 90%), url(${comic.thumbnail.path}/portrait_uncanny.jpg)`
+                      backgroundImage: `linear-gradient(to top, rgba(0, 0, 0, 0.5) 10%, rgba(255, 255, 255, 0) 90%), url(${comic.thumbnail.path.replace(
+                        'http',
+                        'https'
+                      )}/portrait_uncanny.jpg)`
                     }}
                   >
                     <img

@@ -40,6 +40,12 @@ const Initial = () => {
     });
   }
 
+  function handleKeyPress(event) {
+    if (event.key === 'Enter') {
+      handleSubmit();
+    }
+  }
+
   function handleClean() {
     event.preventDefault();
     setSearchField('');
@@ -91,7 +97,7 @@ const Initial = () => {
         return setHeroes(data);
       }
     });
-    return setHeroesOffset(5);
+    return setHeroesOffset(heroesOffset);
   }, []); //eslint-disable-line
 
   return (
@@ -108,13 +114,24 @@ const Initial = () => {
               type="text"
               value={searchField}
               onChange={({ target }) => setSearchField(target.value)}
+              onKeyPress={(event) => handleKeyPress(event)}
               placeholder="Buscar personagem"
             />
             <Search />
           </div>
           <div className={styles.buttonContainer}>
-            <button onClick={handleClean}>Limpar</button>
-            <button onClick={handleSubmit}>Buscar</button>
+            <button
+              onClick={handleClean}
+              className={styles.cleanButton}
+            >
+              Limpar
+            </button>
+            <button
+              onClick={handleSubmit}
+              className={styles.searchButton}
+            >
+              Buscar
+            </button>
           </div>
         </form>
         <div className={styles.cardContainer}>
