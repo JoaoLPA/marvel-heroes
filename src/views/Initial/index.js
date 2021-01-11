@@ -13,8 +13,6 @@ import HeroCardLoading from '../../components/Loading/HeroCardLoading';
 
 import styles from './styles.module.scss';
 
-import HeroesData from './heroes.json';
-
 const Initial = () => {
   const {
     loading,
@@ -26,7 +24,6 @@ const Initial = () => {
   } = useContext(GlobalContext);
 
   const [searchField, setSearchField] = useState('');
-  setHeroes(HeroesData);
 
   function handleSubmit() {
     event.preventDefault();
@@ -82,20 +79,20 @@ const Initial = () => {
     });
   }
 
-  // useEffect(() => {
-  //   setLoading(true);
-  //   getHeroes(heroesOffset, (error, data) => {
-  //     if (error) {
-  //       setLoading(false);
-  //       return console.log(error);
-  //     }
-  //     if (data) {
-  //       setLoading(false);
-  //       return setHeroes(data);
-  //     }
-  //   });
-  //   return setHeroesOffset(heroesOffset);
-  // }, []); //eslint-disable-line
+  useEffect(() => {
+    setLoading(true);
+    getHeroes(heroesOffset, (error, data) => {
+      if (error) {
+        setLoading(false);
+        return console.log(error);
+      }
+      if (data) {
+        setLoading(false);
+        return setHeroes(data);
+      }
+    });
+    return setHeroesOffset(heroesOffset);
+  }, []); //eslint-disable-line
 
   return (
     <>

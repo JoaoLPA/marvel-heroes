@@ -12,33 +12,27 @@ import { ReactComponent as ChevronLeft } from '../../assets/fi_chevron-left.svg'
 import { ReactComponent as Book } from '../../assets/fi_book-open.svg';
 import styles from './styles.module.scss';
 
-import MockData from './mockData.json';
-import ComicsInfo from './comicsInfo.json';
-
 const Details = ({ location }) => {
   const { loading, setLoading } = useContext(GlobalContext);
 
-  // const [heroInfo] = useState(location.state);
-  const [heroInfo] = useState(MockData.results[0]);
-  // const [comics] = useState([...location.state.comics.items]);
-  const [comics] = useState(MockData.results[0].comics.items);
-  // const [comicsInfo, setComicsInfo] = useState(undefined);
-  const [comicsInfo, setComicsInfo] = useState(ComicsInfo.results);
+  const [heroInfo] = useState(location.state);
+  const [comics] = useState([...location.state.comics.items]);
+  const [comicsInfo, setComicsInfo] = useState(undefined);
   const history = useHistory();
 
-  // useEffect(() => {
-  //   setLoading(true);
-  //   const sliced = comics.slice(0, 8);
-  //   const list = sliced.map((url) => url.resourceURI);
-  //   getComics(list, (error, data) => {
-  //     if (data) {
-  //       setComicsInfo(data.map((hq) => hq.data.results[0]));
-  //       setLoading(false);
-  //     } else {
-  //       console.log(error);
-  //     }
-  //   });
-  // }, [comics]); //eslint-disable-line
+  useEffect(() => {
+    setLoading(true);
+    const sliced = comics.slice(0, 8);
+    const list = sliced.map((url) => url.resourceURI);
+    getComics(list, (error, data) => {
+      if (data) {
+        setComicsInfo(data.map((hq) => hq.data.results[0]));
+        setLoading(false);
+      } else {
+        console.log(error);
+      }
+    });
+  }, [comics]); //eslint-disable-line
 
   return (
     <>
@@ -56,11 +50,17 @@ const Details = ({ location }) => {
             <figure
               className={styles.heroPortrait}
               style={{
-                backgroundImage: `url(${heroInfo.thumbnail.path}/portrait_uncanny.jpg)`
+                backgroundImage: `url(${heroInfo.thumbnail.path.replace(
+                  'http',
+                  'https'
+                )}/portrait_uncanny.jpg)`
               }}
             >
               <img
-                src={`${heroInfo.thumbnail.path}/portrait_uncanny.jpg`}
+                src={`${heroInfo.thumbnail.path.replace(
+                  'http',
+                  'https'
+                )}/portrait_uncanny.jpg`}
                 alt={`${heroInfo.name} portrait`}
                 className="screenReader"
               />
@@ -97,7 +97,10 @@ const Details = ({ location }) => {
                   <figure
                     className={styles.comicCover}
                     style={{
-                      backgroundImage: `linear-gradient(to top, rgba(0, 0, 0, 0.5) 10%, rgba(255, 255, 255, 0) 90%), url(${comic.thumbnail.path}/portrait_uncanny.jpg)`
+                      backgroundImage: `linear-gradient(to top, rgba(0, 0, 0, 0.5) 10%, rgba(255, 255, 255, 0) 90%), url(${comic.thumbnail.path.replace(
+                        'http',
+                        'https'
+                      )}/portrait_uncanny.jpg)`
                     }}
                   >
                     <img
