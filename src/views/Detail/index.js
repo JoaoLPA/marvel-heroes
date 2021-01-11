@@ -1,31 +1,41 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import { useHistory } from 'react-router-dom';
 
 import { getComics } from '../../services/api';
+import { GlobalContext } from '../../utils/GlobalContext';
 
 import PageTitle from '../../components/PageTitle';
 import Header from '../../components/Header';
+import ComicCoverLoading from '../../components/Loading/ComicCoverLoading';
 import { ReactComponent as ChevronLeft } from '../../assets/fi_chevron-left.svg';
 import { ReactComponent as Book } from '../../assets/fi_book-open.svg';
 import styles from './styles.module.scss';
 
+import ComicsInfoMock from './comicsInfoMock.json';
+
 const Detail = ({ location }) => {
+  const { loading, setLoading } = useContext(GlobalContext);
+
   const [heroInfo] = useState(location.state);
-  const [comics] = useState([...heroInfo.comics.items]);
-  const [comicsInfo, setComicsInfo] = useState(undefined);
+  const [comics] = useState([...location.state.comics.items]);
+  const [comicsInfo, setComicsInfo] = useState(
+    ...ComicsInfoMock.results
+  );
   const history = useHistory();
 
   useEffect(() => {
+    setLoading(true);
     const sliced = comics.slice(0, 8);
     const list = sliced.map((url) => url.resourceURI);
     getComics(list, (error, data) => {
       if (data) {
         setComicsInfo(data.map((hq) => hq.data.results[0]));
+        setLoading(false);
       } else {
         console.log(error);
       }
     });
-  }, []); //eslint-disable-line
+  }, [comics]); //eslint-disable-line
 
   return (
     <>
@@ -66,11 +76,15 @@ const Detail = ({ location }) => {
           <div className={styles.comicsTitle}>
             <Book />
             <h2>
-              HQs que <strong>{heroInfo.name}</strong> aparece
+              HQs que <strong>{heroInfo.name}</strong> aparece (
+              {location.state.comics.available})
             </h2>
           </div>
           <div className={styles.comicsDisplay}>
-            {comicsInfo &&
+            {loading ? (
+              <ComicCoverLoading />
+            ) : (
+              comicsInfo &&
               comicsInfo.map((comic, index) => (
                 <div key={index} className={styles.comicContainer}>
                   <figure
@@ -89,7 +103,8 @@ const Detail = ({ location }) => {
                     <h3>{comic.title}</h3>
                   </div>
                 </div>
-              ))}
+              ))
+            )}
           </div>
         </section>
       </div>

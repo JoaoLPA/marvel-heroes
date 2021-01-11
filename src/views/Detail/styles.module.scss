@@ -83,8 +83,11 @@
   .comicsTitle {
     display: flex;
     margin-bottom: 36px;
+    position: relative;
 
     svg {
+      position: relative;
+      top: 4px;
       margin-right: 14px;
     }
   }
