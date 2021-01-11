@@ -1,0 +1,1365 @@
+[
+  {
+    "id": 1011206,
+    "name": "Doctor Faustus",
+    "description": "",
+    "modified": "1969-12-31T19:00:00-0500",
+    "thumbnail": {
+      "path": "http://i.annihil.us/u/prod/marvel/i/mg/e/e0/4ce5a54ac4d4b",
+      "extension": "jpg"
+    },
+    "resourceURI": "http://gateway.marvel.com/v1/public/characters/1011206",
+    "comics": {
+      "available": 9,
+      "collectionURI": "http://gateway.marvel.com/v1/public/characters/1011206/comics",
+      "items": [
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/comics/60930",
+          "name": "Black Panther (2016) #14"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/comics/7488",
+          "name": "Captain America (1968) #107"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/comics/7542",
+          "name": "Captain America (1968) #161"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/comics/29229",
+          "name": "Captain America (2004) #612"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/comics/29230",
+          "name": "Captain America (2004) #613"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/comics/35795",
+          "name": "Captain America (2004) #614"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/comics/35779",
+          "name": "Captain America (2004) #615"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/comics/4452",
+          "name": "Marvel Masterworks: Captain America Vol. 3 (Hardcover)"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/comics/27661",
+          "name": "Ultimate Armor Wars (2009) #2"
+        }
+      ],
+      "returned": 9
+    },
+    "series": {
+      "available": 5,
+      "collectionURI": "http://gateway.marvel.com/v1/public/characters/1011206/series",
+      "items": [
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/series/20912",
+          "name": "Black Panther (2016 - 2018)"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/series/832",
+          "name": "Captain America (2004 - 2011)"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/series/1996",
+          "name": "Captain America (1968 - 1996)"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/series/1694",
+          "name": "Marvel Masterworks: Captain America Vol. 3 (2006)"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/series/8845",
+          "name": "Ultimate Armor Wars (2009)"
+        }
+      ],
+      "returned": 5
+    },
+    "stories": {
+      "available": 14,
+      "collectionURI": "http://gateway.marvel.com/v1/public/characters/1011206/stories",
+      "items": [
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/stories/17468",
+          "name": "Captain America (1968) #107",
+          "type": "cover"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/stories/17469",
+          "name": "If the Past Be Not Dead",
+          "type": "interiorStory"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/stories/17577",
+          "name": "Cover #17577",
+          "type": "cover"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/stories/60591",
+          "name": "Ultimate Comics Armor Wars (2009) #2",
+          "type": "cover"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/stories/60592",
+          "name": "Interior #60592",
+          "type": "interiorStory"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/stories/63649",
+          "name": "Captain America (2004) #612",
+          "type": "cover"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/stories/63650",
+          "name": "Interior #63650",
+          "type": "interiorStory"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/stories/63651",
+          "name": "Captain America (2004) #613",
+          "type": "cover"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/stories/63652",
+          "name": "Interior #63652",
+          "type": "interiorStory"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/stories/79181",
+          "name": "Captain America (2004) #615",
+          "type": "cover"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/stories/79182",
+          "name": "Captain America #615",
+          "type": "interiorStory"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/stories/79191",
+          "name": "Captain America (2004) #614",
+          "type": "cover"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/stories/90190",
+          "name": "Captain America (2004) #614 interior",
+          "type": "interiorStory"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/stories/132313",
+          "name": "cover from Black Panther (2016) #14",
+          "type": "cover"
+        }
+      ],
+      "returned": 14
+    },
+    "events": {
+      "available": 0,
+      "collectionURI": "http://gateway.marvel.com/v1/public/characters/1011206/events",
+      "items": [],
+      "returned": 0
+    },
+    "urls": [
+      {
+        "type": "detail",
+        "url": "http://marvel.com/characters/564/doctor_faustus?utm_campaign=apiRef&utm_source=b0233de852e8d6de67a9ca4b1cfe6846"
+      },
+      {
+        "type": "comiclink",
+        "url": "http://marvel.com/comics/characters/1011206/doctor_faustus?utm_campaign=apiRef&utm_source=b0233de852e8d6de67a9ca4b1cfe6846"
+      }
+    ]
+  },
+  {
+    "id": 1009276,
+    "name": "Doctor Octopus",
+    "description": "",
+    "modified": "2013-11-20T17:05:53-0500",
+    "thumbnail": {
+      "path": "http://i.annihil.us/u/prod/marvel/i/mg/b/b0/528d31b62eaba",
+      "extension": "jpg"
+    },
+    "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009276",
+    "comics": {
+      "available": 160,
+      "collectionURI": "http://gateway.marvel.com/v1/public/characters/1009276/comics",
+      "items": [
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/comics/37262",
+          "name": "Alias (2001) #15"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/comics/37255",
+          "name": "Alias Omnibus (Hardcover)"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/comics/6704",
+          "name": "The Amazing Spider-Man (1963) #3"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/comics/6494",
+          "name": "The Amazing Spider-Man (1963) #11"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/comics/6505",
+          "name": "The Amazing Spider-Man (1963) #12"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/comics/55318",
+          "name": "The Amazing Spider-Man (2015) #20"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/comics/6743",
+          "name": "The Amazing Spider-Man (1963) #334"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/comics/6744",
+          "name": "The Amazing Spider-Man (1963) #335"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/comics/6745",
+          "name": "The Amazing Spider-Man (1963) #336"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/comics/6746",
+          "name": "The Amazing Spider-Man (1963) #337"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/comics/6747",
+          "name": "The Amazing Spider-Man (1963) #338"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/comics/6748",
+          "name": "The Amazing Spider-Man (1963) #339"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/comics/6812",
+          "name": "The Amazing Spider-Man (1963) #397"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/comics/6813",
+          "name": "The Amazing Spider-Man (1963) #398"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/comics/277",
+          "name": "Amazing Spider-Man (1999) #500"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/comics/24407",
+          "name": "Amazing Spider-Man (1999) #600"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/comics/29303",
+          "name": "Amazing Spider-Man (1999) #600 (2ND PRINTING VARIANT)"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/comics/37039",
+          "name": "Amazing Spider-Man (1999) #634 (2ND PRINTING VARIANT)"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/comics/30317",
+          "name": "Amazing Spider-Man (1999) #642"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/comics/30318",
+          "name": "Amazing Spider-Man (1999) #643"
+        }
+      ],
+      "returned": 20
+    },
+    "series": {
+      "available": 59,
+      "collectionURI": "http://gateway.marvel.com/v1/public/characters/1009276/series",
+      "items": [
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/series/672",
+          "name": "Alias (2001 - 2003)"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/series/13383",
+          "name": "Alias Omnibus (2006)"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/series/454",
+          "name": "Amazing Spider-Man (1999 - 2013)"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/series/2984",
+          "name": "Amazing Spider-Man Annual (1964 - 2018)"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/series/22376",
+          "name": "AMAZING SPIDER-MAN EPIC COLLECTION: THE GOBLIN'S LAST STAND TPB (2017)"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/series/5376",
+          "name": "Amazing Spider-Man Family (2008 - 2009)"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/series/1967",
+          "name": "AMAZING SPIDER-MAN OMNIBUS VOL. 1 HC (2007)"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/series/318",
+          "name": "Amazing Spider-Man Vol. 6 (2004)"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/series/22186",
+          "name": "Amazing Spider-Man: The Clone Conspiracy (2017)"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/series/23966",
+          "name": "Amazing Spider-Man: Worldwide Vol. 3 (2018)"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/series/22109",
+          "name": "Amazing Spider-Man: Worldwide Vol. 7 (2018)"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/series/22547",
+          "name": "Avengers (2016 - 2018)"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/series/1996",
+          "name": "Captain America (1968 - 1996)"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/series/2002",
+          "name": "Daredevil (1964 - 1998)"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/series/2021",
+          "name": "Incredible Hulk (1962 - 1999)"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/series/4889",
+          "name": "Invincible Iron Man (2008 - 2012)"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/series/22321",
+          "name": "MARVEL MASTERWORKS: THE AMAZING SPIDER-MAN VOL. 19 HC (2017)"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/series/324",
+          "name": "MARVEL MASTERWORKS: THE AMAZING SPIDER-MAN VOL. 6 HC (2004)"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/series/25750",
+          "name": "Marvel Super Hero Adventures: Spider-Man and the Stolen Vibranium (2018)"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/series/27655",
+          "name": "Marvel Super Hero Adventures: Spider-Man and the Stolen Vibranium (2019)"
+        }
+      ],
+      "returned": 20
+    },
+    "stories": {
+      "available": 174,
+      "collectionURI": "http://gateway.marvel.com/v1/public/characters/1009276/stories",
+      "items": [
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/stories/599",
+          "name": "Interior #599",
+          "type": "interiorStory"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/stories/866",
+          "name": "Cover #866",
+          "type": "cover"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/stories/977",
+          "name": "Cover #977",
+          "type": "cover"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/stories/979",
+          "name": "Cover #979",
+          "type": "cover"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/stories/1018",
+          "name": "Amazing Spider-Man (1999) #500",
+          "type": "cover"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/stories/1019",
+          "name": "Interior #1019",
+          "type": "interiorStory"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/stories/1719",
+          "name": "Cover #1719",
+          "type": "cover"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/stories/1721",
+          "name": "Cover #1721",
+          "type": "cover"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/stories/1913",
+          "name": "Cover #1913",
+          "type": "cover"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/stories/2039",
+          "name": "SPECTACULAR SPIDER-MAN (2003) #6",
+          "type": "cover"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/stories/2081",
+          "name": "Cover #2081",
+          "type": "cover"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/stories/2535",
+          "name": "Cover #2535",
+          "type": "cover"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/stories/2540",
+          "name": "Cover #2540",
+          "type": "cover"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/stories/3007",
+          "name": "SENSATIONAL SPIDER-MAN (2006) #28",
+          "type": "cover"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/stories/3200",
+          "name": "As poisonous radiation courses through his bloodstream, a vicious Doctor Octopus cracks the secret of Spider-Man and prepares fo",
+          "type": "cover"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/stories/7710",
+          "name": "Spider-Man: Reign (2006) #3",
+          "type": "cover"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/stories/7711",
+          "name": "3 of 4 - Reign - 4XLS",
+          "type": "interiorStory"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/stories/13538",
+          "name": "The Spider Or The Man?",
+          "type": "cover"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/stories/13559",
+          "name": "The Long-awaited Return of Doctor Octopus!",
+          "type": "cover"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/stories/13570",
+          "name": "Cover #13570",
+          "type": "cover"
+        }
+      ],
+      "returned": 20
+    },
+    "events": {
+      "available": 4,
+      "collectionURI": "http://gateway.marvel.com/v1/public/characters/1009276/events",
+      "items": [
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/events/332",
+          "name": "Dead No More: The Clone Conspiracy"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/events/302",
+          "name": "Fear Itself"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/events/336",
+          "name": "Secret Empire"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/events/270",
+          "name": "Secret Wars"
+        }
+      ],
+      "returned": 4
+    },
+    "urls": [
+      {
+        "type": "detail",
+        "url": "http://marvel.com/characters/565/doctor_octopus?utm_campaign=apiRef&utm_source=b0233de852e8d6de67a9ca4b1cfe6846"
+      },
+      {
+        "type": "wiki",
+        "url": "http://marvel.com/universe/Doctor_Octopus_%28Otto_Octavius%29?utm_campaign=apiRef&utm_source=b0233de852e8d6de67a9ca4b1cfe6846"
+      },
+      {
+        "type": "comiclink",
+        "url": "http://marvel.com/comics/characters/1009276/doctor_octopus?utm_campaign=apiRef&utm_source=b0233de852e8d6de67a9ca4b1cfe6846"
+      }
+    ]
+  },
+  {
+    "id": 1010921,
+    "name": "Doctor Octopus (Ultimate)",
+    "description": "",
+    "modified": "1969-12-31T19:00:00-0500",
+    "thumbnail": {
+      "path": "http://i.annihil.us/u/prod/marvel/i/mg/5/50/4c00344e05ce0",
+      "extension": "jpg"
+    },
+    "resourceURI": "http://gateway.marvel.com/v1/public/characters/1010921",
+    "comics": {
+      "available": 15,
+      "collectionURI": "http://gateway.marvel.com/v1/public/characters/1010921/comics",
+      "items": [
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/comics/37465",
+          "name": "Ultimate Comics Spider-Man (2009) #156"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/comics/37458",
+          "name": "Ultimate Comics Spider-Man (2009) #158"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/comics/14840",
+          "name": "Ultimate Spider-Man (2000) #14"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/comics/14841",
+          "name": "Ultimate Spider-Man (2000) #15"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/comics/14842",
+          "name": "Ultimate Spider-Man (2000) #16"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/comics/14843",
+          "name": "Ultimate Spider-Man (2000) #17"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/comics/14844",
+          "name": "Ultimate Spider-Man (2000) #18"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/comics/14845",
+          "name": "Ultimate Spider-Man (2000) #19"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/comics/14847",
+          "name": "Ultimate Spider-Man (2000) #20"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/comics/5374",
+          "name": "Ultimate Spider-Man (2000) #102"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/comics/5642",
+          "name": "Ultimate Spider-Man (2000) #103"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/comics/5788",
+          "name": "Ultimate Spider-Man (2000) #104"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/comics/16199",
+          "name": "Ultimate Spider-Man Vol. 17: Clone Saga (Trade Paperback)"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/comics/2822",
+          "name": "Ultimate Spider-Man Vol. 3: Double Trouble (Trade Paperback)"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/comics/1015",
+          "name": "Ultimate Spider-Man Vol. III: Double Trouble (Trade Paperback)"
+        }
+      ],
+      "returned": 15
+    },
+    "series": {
+      "available": 5,
+      "collectionURI": "http://gateway.marvel.com/v1/public/characters/1010921/series",
+      "items": [
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/series/8509",
+          "name": "Ultimate Comics Spider-Man (2009 - 2012)"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/series/466",
+          "name": "Ultimate Spider-Man (2000 - 2009)"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/series/2692",
+          "name": "Ultimate Spider-Man Vol. 17: Clone Saga (2007)"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/series/1165",
+          "name": "Ultimate Spider-Man Vol. 3: Double Trouble (2005)"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/series/77",
+          "name": "Ultimate Spider-Man Vol. III: Double Trouble (2002)"
+        }
+      ],
+      "returned": 5
+    },
+    "stories": {
+      "available": 15,
+      "collectionURI": "http://gateway.marvel.com/v1/public/characters/1010921/stories",
+      "items": [
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/stories/1401",
+          "name": "6 of ? - The Clone Saga",
+          "type": "interiorStory"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/stories/1403",
+          "name": "7 of 8 - The Clone Saga",
+          "type": "interiorStory"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/stories/1404",
+          "name": "Ultimate Spider-Man (2000) #104",
+          "type": "cover"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/stories/1405",
+          "name": "8 of 8 - The Clone Saga",
+          "type": "interiorStory"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/stories/30300",
+          "name": "Doctor Octopus",
+          "type": "cover"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/stories/30302",
+          "name": "[",
+          "type": "interiorStory"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/stories/30306",
+          "name": "[",
+          "type": "interiorStory"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/stories/30310",
+          "name": "[",
+          "type": "interiorStory"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/stories/30315",
+          "name": "[",
+          "type": "interiorStory"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/stories/30317",
+          "name": "ULTIMATE SPIDER-MAN (2000) #18",
+          "type": "cover"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/stories/30319",
+          "name": "[",
+          "type": "interiorStory"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/stories/30323",
+          "name": "[",
+          "type": "interiorStory"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/stories/30330",
+          "name": "[",
+          "type": "interiorStory"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/stories/82914",
+          "name": "ULTIMATE COMICS SPIDER-MAN (2009) #158",
+          "type": "cover"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/stories/82928",
+          "name": "ULTIMATE COMICS SPIDER-MAN (2009) #156",
+          "type": "cover"
+        }
+      ],
+      "returned": 15
+    },
+    "events": {
+      "available": 0,
+      "collectionURI": "http://gateway.marvel.com/v1/public/characters/1010921/events",
+      "items": [],
+      "returned": 0
+    },
+    "urls": [
+      {
+        "type": "detail",
+        "url": "http://marvel.com/characters/565/doctor_octopus?utm_campaign=apiRef&utm_source=b0233de852e8d6de67a9ca4b1cfe6846"
+      },
+      {
+        "type": "wiki",
+        "url": "http://marvel.com/universe/Doctor_Octopus_%28Ultimate%29?utm_campaign=apiRef&utm_source=b0233de852e8d6de67a9ca4b1cfe6846"
+      },
+      {
+        "type": "comiclink",
+        "url": "http://marvel.com/comics/characters/1010921/doctor_octopus_ultimate?utm_campaign=apiRef&utm_source=b0233de852e8d6de67a9ca4b1cfe6846"
+      }
+    ]
+  },
+  {
+    "id": 1010689,
+    "name": "Doctor Spectrum",
+    "description": "",
+    "modified": "2011-05-05T13:07:29-0400",
+    "thumbnail": {
+      "path": "http://i.annihil.us/u/prod/marvel/i/mg/4/90/4dc2d94978576",
+      "extension": "jpg"
+    },
+    "resourceURI": "http://gateway.marvel.com/v1/public/characters/1010689",
+    "comics": {
+      "available": 21,
+      "collectionURI": "http://gateway.marvel.com/v1/public/characters/1010689/comics",
+      "items": [
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/comics/7322",
+          "name": "Avengers (1963) #70"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/comics/7339",
+          "name": "Avengers (1963) #86"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/comics/7287",
+          "name": "Avengers (1963) #400"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/comics/1311",
+          "name": "Avengers Assemble (Hardcover)"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/comics/614",
+          "name": "Doctor Spectrum (2004) #1"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/comics/833",
+          "name": "Doctor Spectrum (2004) #2"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/comics/891",
+          "name": "Doctor Spectrum (2004) #3"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/comics/74",
+          "name": "Doctor Spectrum (2004) #4"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/comics/1563",
+          "name": "Doctor Spectrum (2004) #5"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/comics/1652",
+          "name": "Doctor Spectrum (2004) #6"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/comics/9619",
+          "name": "Iron Man (1968) #63"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/comics/9620",
+          "name": "Iron Man (1968) #64"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/comics/9621",
+          "name": "Iron Man (1968) #65"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/comics/9622",
+          "name": "Iron Man (1968) #66"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/comics/3908",
+          "name": "Squadron Supreme (2006) #1"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/comics/4038",
+          "name": "Squadron Supreme (2006) #2"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/comics/5425",
+          "name": "Squadron Supreme Vol. 1: The Pre-War Years Premiere (Hardcover)"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/comics/60178",
+          "name": "Squadron Supreme Vol. 3: Finding Namor (Trade Paperback)"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/comics/37095",
+          "name": "Supreme Power (2011) #1"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/comics/37096",
+          "name": "Supreme Power (2011) #2"
+        }
+      ],
+      "returned": 20
+    },
+    "series": {
+      "available": 8,
+      "collectionURI": "http://gateway.marvel.com/v1/public/characters/1010689/series",
+      "items": [
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/series/1991",
+          "name": "Avengers (1963 - 1996)"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/series/1340",
+          "name": "Avengers Assemble (2004)"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/series/801",
+          "name": "Doctor Spectrum (2004 - 2005)"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/series/2029",
+          "name": "Iron Man (1968 - 1996)"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/series/944",
+          "name": "Squadron Supreme (2006)"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/series/1791",
+          "name": "Squadron Supreme Vol. 1: The Pre-War Years Premiere (2006)"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/series/22127",
+          "name": "Squadron Supreme Vol. 3: Finding Namor (2017)"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/series/13269",
+          "name": "Supreme Power (2011)"
+        }
+      ],
+      "returned": 8
+    },
+    "stories": {
+      "available": 24,
+      "collectionURI": "http://gateway.marvel.com/v1/public/characters/1010689/stories",
+      "items": [
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/stories/4047",
+          "name": "Full Spectrum",
+          "type": "interiorStory"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/stories/4049",
+          "name": "Interior #4049",
+          "type": "interiorStory"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/stories/4051",
+          "name": "The story that was too big to tell in Supreme Power Vol. 1 continues.  Figures from Joe Ledger's (aka: Dr. Spectrum) past contin",
+          "type": "interiorStory"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/stories/4053",
+          "name": "PART 3 (OF 6) From the pages of SUPREME POWER, the limited series that reveals the dark secrets of Joe Ledger’s past.  And while",
+          "type": "interiorStory"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/stories/4055",
+          "name": "5 of 6 - Full Spectrum",
+          "type": "interiorStory"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/stories/4057",
+          "name": "6 of 6 - Full Spectrum",
+          "type": "interiorStory"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/stories/5249",
+          "name": "1 of 6 - The Pre-War Years",
+          "type": "cover"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/stories/5251",
+          "name": "2 of 6 - The Pre-War Years",
+          "type": "cover"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/stories/15133",
+          "name": "Avengers (1963) #400",
+          "type": "cover"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/stories/15206",
+          "name": "AVENGERS (1963) #70",
+          "type": "cover"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/stories/15241",
+          "name": "Brain-Child to the Dark Tower Came",
+          "type": "interiorStory"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/stories/19719",
+          "name": "Enter:  Dr. Spectrum",
+          "type": "interiorStory"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/stories/19721",
+          "name": "Rokk Cometh!",
+          "type": ""
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/stories/19723",
+          "name": "The Cutting Edge of Death!",
+          "type": ""
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/stories/19725",
+          "name": "Battle Royal!",
+          "type": "interiorStory"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/stories/44875",
+          "name": "Avengers Annual (1967) #1",
+          "type": "cover"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/stories/82210",
+          "name": "Supreme Power: The Redemption of Mark Milton (2010) #1",
+          "type": "interiorStory"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/stories/82211",
+          "name": "Cover #82211",
+          "type": "cover"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/stories/94655",
+          "name": "Supreme Power (2010) #4",
+          "type": "cover"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/stories/96642",
+          "name": "Iron Man (1968) #66",
+          "type": "cover"
+        }
+      ],
+      "returned": 20
+    },
+    "events": {
+      "available": 0,
+      "collectionURI": "http://gateway.marvel.com/v1/public/characters/1010689/events",
+      "items": [],
+      "returned": 0
+    },
+    "urls": [
+      {
+        "type": "detail",
+        "url": "http://marvel.com/characters/566/doctor_spectrum?utm_campaign=apiRef&utm_source=b0233de852e8d6de67a9ca4b1cfe6846"
+      },
+      {
+        "type": "comiclink",
+        "url": "http://marvel.com/comics/characters/1010689/doctor_spectrum?utm_campaign=apiRef&utm_source=b0233de852e8d6de67a9ca4b1cfe6846"
+      }
+    ]
+  },
+  {
+    "id": 1009282,
+    "name": "Doctor Strange",
+    "description": "",
+    "modified": "2020-07-21T10:33:36-0400",
+    "thumbnail": {
+      "path": "http://i.annihil.us/u/prod/marvel/i/mg/5/f0/5261a85a501fe",
+      "extension": "jpg"
+    },
+    "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009282",
+    "comics": {
+      "available": 838,
+      "collectionURI": "http://gateway.marvel.com/v1/public/characters/1009282/comics",
+      "items": [
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/comics/43508",
+          "name": "A+X (2012) #9"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/comics/29317",
+          "name": "ACTS OF VENGEANCE CROSSOVERS OMNIBUS (Hardcover)"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/comics/29318",
+          "name": "ACTS OF VENGEANCE CROSSOVERS OMNIBUS (DM Only) (Hardcover)"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/comics/61524",
+          "name": "All-New Guardians of the Galaxy (2017) #12"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/comics/56435",
+          "name": "All-New Wolverine (2015) #4"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/comics/12668",
+          "name": "Alpha Flight (1983) #127"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/comics/6745",
+          "name": "The Amazing Spider-Man (1963) #336"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/comics/277",
+          "name": "Amazing Spider-Man (1999) #500"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/comics/361",
+          "name": "Amazing Spider-Man (1999) #504"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/comics/30314",
+          "name": "Amazing Spider-Man (1999) #639"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/comics/34118",
+          "name": "Amazing Spider-Man (1999) #640"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/comics/35509",
+          "name": "Amazing Spider-Man (1999) #673"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/comics/16883",
+          "name": "Amazing Spider-Man Annual (1964) #1"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/comics/16894",
+          "name": "Amazing Spider-Man Annual (1964) #2"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/comics/16888",
+          "name": "Amazing Spider-Man Annual (1964) #14"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/comics/1262",
+          "name": "Amazing Spider-Man Vol. 6 (Trade Paperback)"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/comics/2970",
+          "name": "AMAZING SPIDER-MAN VOL. 7: BOOK OF EZEKIEL TPB (Trade Paperback)"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/comics/1333",
+          "name": "Amazing Spider-Man Vol. 7: The Book of Ezekiel (Trade Paperback)"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/comics/67002",
+          "name": "Avengers (2018) #1"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/comics/67311",
+          "name": "Avengers (2018) #2"
+        }
+      ],
+      "returned": 20
+    },
+    "series": {
+      "available": 277,
+      "collectionURI": "http://gateway.marvel.com/v1/public/characters/1009282/series",
+      "items": [
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/series/16450",
+          "name": "A+X (2012 - 2014)"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/series/9994",
+          "name": "ACTS OF VENGEANCE CROSSOVERS OMNIBUS (2011)"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/series/9995",
+          "name": "ACTS OF VENGEANCE CROSSOVERS OMNIBUS (DM Only) (2011)"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/series/23058",
+          "name": "All-New Guardians of the Galaxy (2017)"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/series/20682",
+          "name": "All-New Wolverine (2015 - 2018)"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/series/2116",
+          "name": "Alpha Flight (1983 - 1994)"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/series/454",
+          "name": "Amazing Spider-Man (1999 - 2013)"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/series/2984",
+          "name": "Amazing Spider-Man Annual (1964 - 2018)"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/series/318",
+          "name": "Amazing Spider-Man Vol. 6 (2004)"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/series/1292",
+          "name": "AMAZING SPIDER-MAN VOL. 7: BOOK OF EZEKIEL TPB (2005)"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/series/1291",
+          "name": "Amazing Spider-Man Vol. 7: The Book of Ezekiel (2004)"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/series/24229",
+          "name": "Avengers (2018 - Present)"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/series/9085",
+          "name": "Avengers (2010 - 2012)"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/series/1991",
+          "name": "Avengers (1963 - 1996)"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/series/9086",
+          "name": "Avengers Academy (2010 - 2012)"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/series/13320",
+          "name": "Avengers Annual (2012)"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/series/1988",
+          "name": "Avengers Annual (1967 - 1994)"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/series/94",
+          "name": "Avengers Legends Vol. II: George Perez Book I (1999)"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/series/15305",
+          "name": "Avengers Vs. X-Men (2012)"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/series/4864",
+          "name": "Avengers/Invaders (2008 - 2009)"
+        }
+      ],
+      "returned": 20
+    },
+    "stories": {
+      "available": 1064,
+      "collectionURI": "http://gateway.marvel.com/v1/public/characters/1009282/stories",
+      "items": [
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/stories/1018",
+          "name": "Amazing Spider-Man (1999) #500",
+          "type": "cover"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/stories/1666",
+          "name": "Interior #1666",
+          "type": "interiorStory"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/stories/1838",
+          "name": "Spectacular Spider-Man (2003) #21",
+          "type": "cover"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/stories/1839",
+          "name": "1 of 1 - Card Game",
+          "type": "interiorStory"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/stories/2359",
+          "name": "1 of",
+          "type": "cover"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/stories/2361",
+          "name": "2 of - Fear",
+          "type": "cover"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/stories/3099",
+          "name": "1 of 5",
+          "type": "cover"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/stories/3463",
+          "name": "3 of 3 - Sentry",
+          "type": "cover"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/stories/3469",
+          "name": "4 of 4 - Sentry",
+          "type": "cover"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/stories/3500",
+          "name": "New Avengers (2004) #26",
+          "type": "cover"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/stories/3846",
+          "name": "5 of 5 - Bride of the Panther",
+          "type": "cover"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/stories/3848",
+          "name": "Cover #3848",
+          "type": "cover"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/stories/3954",
+          "name": "4 of 6 - 6XLS",
+          "type": "cover"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/stories/3956",
+          "name": "5 of 6 - 6XLS",
+          "type": "cover"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/stories/4107",
+          "name": "1 of 1 - Fantastic Four & Dr. Strange",
+          "type": "cover"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/stories/4123",
+          "name": "5 of 6 - Master of the Ring",
+          "type": "cover"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/stories/4656",
+          "name": "Friendly Neighborhood Spider-Man (2005) #2",
+          "type": "cover"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/stories/4657",
+          "name": "2 of 6",
+          "type": "interiorStory"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/stories/5564",
+          "name": "1 of 2 -",
+          "type": "cover"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/stories/5688",
+          "name": "1 of 5 - A Long Time Dead",
+          "type": "cover"
+        }
+      ],
+      "returned": 20
+    },
+    "events": {
+      "available": 22,
+      "collectionURI": "http://gateway.marvel.com/v1/public/characters/1009282/events",
+      "items": [
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/events/116",
+          "name": "Acts of Vengeance!"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/events/310",
+          "name": "Avengers VS X-Men"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/events/235",
+          "name": "Blood and Thunder"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/events/296",
+          "name": "Chaos War"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/events/238",
+          "name": "Civil War"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/events/318",
+          "name": "Dark Reign"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/events/302",
+          "name": "Fear Itself"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/events/315",
+          "name": "Infinity"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/events/29",
+          "name": "Infinity War"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/events/317",
+          "name": "Inhumanity"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/events/255",
+          "name": "Initiative"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/events/311",
+          "name": "Marvel NOW!"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/events/37",
+          "name": "Maximum Security"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/events/154",
+          "name": "Onslaught"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/events/319",
+          "name": "Original Sin"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/events/266",
+          "name": "Other - Evolve or Die"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/events/336",
+          "name": "Secret Empire"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/events/270",
+          "name": "Secret Wars"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/events/271",
+          "name": "Secret Wars II"
+        },
+        {
+          "resourceURI": "http://gateway.marvel.com/v1/public/events/309",
+          "name": "Shattered Heroes"
+        }
+      ],
+      "returned": 20
+    },
+    "urls": [
+      {
+        "type": "detail",
+        "url": "http://marvel.com/comics/characters/1009282/doctor_strange?utm_campaign=apiRef&utm_source=b0233de852e8d6de67a9ca4b1cfe6846"
+      },
+      {
+        "type": "wiki",
+        "url": "http://marvel.com/universe/Doctor_Strange_(Stephen_Strange)?utm_campaign=apiRef&utm_source=b0233de852e8d6de67a9ca4b1cfe6846"
+      },
+      {
+        "type": "comiclink",
+        "url": "http://marvel.com/comics/characters/1009282/doctor_strange?utm_campaign=apiRef&utm_source=b0233de852e8d6de67a9ca4b1cfe6846"
+      }
+    ]
+  }
+]

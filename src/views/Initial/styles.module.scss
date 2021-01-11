@@ -24,7 +24,7 @@
 
   .iconWrapper{
     position: relative;
-    max-width: 380px;
+    max-width: 420px;
     flex-shrink: 1;
     input{
       border-radius: 32px;
@@ -32,7 +32,6 @@
       border: solid 2px rgba($primary, 0);
       padding: 14px 10px;
       padding-left: 50px;
-      min-width: 380px;
       margin: 0 auto;
 
       &::placeholder {
@@ -131,4 +130,11 @@
 }
 
 
-
+@media only screen and (max-width: 576px) {
+  .title {
+    h1 {
+      width: 18ch;
+      text-align: center;
+    }
+  }
+}

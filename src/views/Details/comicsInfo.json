@@ -1,0 +1,84 @@
+{
+  "results": [
+    {
+      "resourceURI": "http://gateway.marvel.com/v1/public/comics/37262",
+      "name": "Alias (2001) #15"
+    },
+    {
+      "resourceURI": "http://gateway.marvel.com/v1/public/comics/37255",
+      "name": "Alias Omnibus (Hardcover)"
+    },
+    {
+      "resourceURI": "http://gateway.marvel.com/v1/public/comics/6704",
+      "name": "The Amazing Spider-Man (1963) #3"
+    },
+    {
+      "resourceURI": "http://gateway.marvel.com/v1/public/comics/6494",
+      "name": "The Amazing Spider-Man (1963) #11"
+    },
+    {
+      "resourceURI": "http://gateway.marvel.com/v1/public/comics/6505",
+      "name": "The Amazing Spider-Man (1963) #12"
+    },
+    {
+      "resourceURI": "http://gateway.marvel.com/v1/public/comics/55318",
+      "name": "The Amazing Spider-Man (2015) #20"
+    },
+    {
+      "resourceURI": "http://gateway.marvel.com/v1/public/comics/6743",
+      "name": "The Amazing Spider-Man (1963) #334"
+    },
+    {
+      "resourceURI": "http://gateway.marvel.com/v1/public/comics/6744",
+      "name": "The Amazing Spider-Man (1963) #335"
+    },
+    {
+      "resourceURI": "http://gateway.marvel.com/v1/public/comics/6745",
+      "name": "The Amazing Spider-Man (1963) #336"
+    },
+    {
+      "resourceURI": "http://gateway.marvel.com/v1/public/comics/6746",
+      "name": "The Amazing Spider-Man (1963) #337"
+    },
+    {
+      "resourceURI": "http://gateway.marvel.com/v1/public/comics/6747",
+      "name": "The Amazing Spider-Man (1963) #338"
+    },
+    {
+      "resourceURI": "http://gateway.marvel.com/v1/public/comics/6748",
+      "name": "The Amazing Spider-Man (1963) #339"
+    },
+    {
+      "resourceURI": "http://gateway.marvel.com/v1/public/comics/6812",
+      "name": "The Amazing Spider-Man (1963) #397"
+    },
+    {
+      "resourceURI": "http://gateway.marvel.com/v1/public/comics/6813",
+      "name": "The Amazing Spider-Man (1963) #398"
+    },
+    {
+      "resourceURI": "http://gateway.marvel.com/v1/public/comics/277",
+      "name": "Amazing Spider-Man (1999) #500"
+    },
+    {
+      "resourceURI": "http://gateway.marvel.com/v1/public/comics/24407",
+      "name": "Amazing Spider-Man (1999) #600"
+    },
+    {
+      "resourceURI": "http://gateway.marvel.com/v1/public/comics/29303",
+      "name": "Amazing Spider-Man (1999) #600 (2ND PRINTING VARIANT)"
+    },
+    {
+      "resourceURI": "http://gateway.marvel.com/v1/public/comics/37039",
+      "name": "Amazing Spider-Man (1999) #634 (2ND PRINTING VARIANT)"
+    },
+    {
+      "resourceURI": "http://gateway.marvel.com/v1/public/comics/30317",
+      "name": "Amazing Spider-Man (1999) #642"
+    },
+    {
+      "resourceURI": "http://gateway.marvel.com/v1/public/comics/30318",
+      "name": "Amazing Spider-Man (1999) #643"
+    }
+  ]
+}
