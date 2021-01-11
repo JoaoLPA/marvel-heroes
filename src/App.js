@@ -15,7 +15,9 @@ const App = () => {
         </BrowserRouter>
       </GlobalStorage>
       <footer>
-        <p>2021 MARVEL && JOÃO L. P. ALVES</p>
+        <p>
+          Data provided by Marvel. © 2014 Marvel && JOÃO L. P. ALVES
+        </p>
       </footer>
     </>
   );

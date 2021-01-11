@@ -6,11 +6,11 @@
     ".gitignore": true,
     "package.json": false,
     "package-lock.json": true,
-    "public": true,
+    "public": false,
     ".editorconfig": true,
     ".eslintcache": true,
     ".eslintignore": true,
     ".prettierignore": true,
-    "README.md": true,
+    "README.md": false,
   }
 }
