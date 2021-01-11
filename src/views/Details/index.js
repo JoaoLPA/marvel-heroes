@@ -14,7 +14,7 @@ import styles from './styles.module.scss';
 
 import ComicsInfoMock from './comicsInfoMock.json';
 
-const Detail = ({ location }) => {
+const Details = ({ location }) => {
   const { loading, setLoading } = useContext(GlobalContext);
 
   const [heroInfo] = useState(location.state);
@@ -40,7 +40,7 @@ const Detail = ({ location }) => {
     <>
       <PageTitle title={`Marvel - ${heroInfo.name}`} />
       <Header color="#FFF" />
-      <div className={styles.detailsBackground}>
+      <div className={styles.ssBackground}>
         <section className={styles.description}>
           <button
             className={styles.goBackButton}
@@ -113,4 +113,4 @@ const Detail = ({ location }) => {
   );
 };
 
-export default Detail;
+export default Details;

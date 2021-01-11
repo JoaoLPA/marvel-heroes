@@ -5,7 +5,7 @@ export const GlobalContext = createContext();
 export const GlobalStorage = ({ children }) => {
   const [heroesOffset, setHeroesOffset] = useState(325);
   const [heroes, setHeroes] = useState(undefined);
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
 
   return (
     <GlobalContext.Provider

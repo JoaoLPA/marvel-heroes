@@ -9,6 +9,7 @@ import { ReactComponent as ArrowRight } from '../../assets/fi_arrow-right.svg';
 import Header from '../../components/Header';
 import PageTitle from '../../components/PageTitle';
 import HeroCard from '../../components/HeroCard';
+import HeroCardLoading from '../../components/Loading/HeroCardLoading';
 
 import styles from './styles.module.scss';
 
@@ -118,7 +119,7 @@ const Initial = () => {
         </form>
         <div className={styles.cardContainer}>
           {loading ? (
-            <h3>carregando</h3>
+            <HeroCardLoading />
           ) : (
             heroes &&
             heroes.map((hero) => (
