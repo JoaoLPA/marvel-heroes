@@ -7,6 +7,7 @@ import { GlobalContext } from '../../utils/GlobalContext';
 import PageTitle from '../../components/PageTitle';
 import Header from '../../components/Header';
 import ComicCoverLoading from '../../components/Loading/ComicCoverLoading';
+import NoDescription from './NoDescription';
 import { ReactComponent as ChevronLeft } from '../../assets/fi_chevron-left.svg';
 import { ReactComponent as Book } from '../../assets/fi_book-open.svg';
 import styles from './styles.module.scss';
@@ -68,7 +69,7 @@ const Detail = ({ location }) => {
             {heroInfo.description.length > 1 ? (
               <p>{heroInfo.description}</p>
             ) : (
-              <p>Sem descrição disponível</p>
+              <NoDescription />
             )}
           </section>
         </section>

@@ -131,3 +131,16 @@
     }
   }
 }
+
+.noDescriptionContainer {
+  display: flex;;
+  justify-content: center;
+  align-items: center;
+  border: 5px solid $primary;
+  width: 100%;
+  padding: 32px;
+
+  svg {
+    margin-right: 1rem;
+  }
+}
