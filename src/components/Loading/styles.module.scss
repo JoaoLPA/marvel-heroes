@@ -1,0 +1,33 @@
+@import '../../styles/colors.scss';
+
+.heroCardLoading {
+  width: 212px;
+  height: 400px;
+  background-color: $gray1;
+  position: relative;
+  overflow: hidden;
+
+  .loading {
+    position: absolute;
+    height: 50px;
+    width: 400px;
+    background-color: $gray2;
+    bottom: -450px;
+    left: -50%;
+    filter: blur(50px);
+    animation: slide 1s infinite ease;
+  }
+
+   &:nth-child(even) {
+      position: relative;
+      top: 20px;
+  }
+}
+
+@keyframes slide {
+  from {
+    top: 450px;
+  } to {
+    top: -150px;
+  }
+}

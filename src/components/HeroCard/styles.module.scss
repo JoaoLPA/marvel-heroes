@@ -53,10 +53,8 @@
 @keyframes slidein {
   from {
     opacity: 0;
-    transform: translateY(50px);
 
   } to {
     opacity: initial;
-    transform: translateY(0);
   }
 }

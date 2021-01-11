@@ -15,9 +15,6 @@ const Detail = ({ location }) => {
   const [comicsInfo, setComicsInfo] = useState(undefined);
   const history = useHistory();
 
-  const heroState = location.state;
-  console.log(heroState);
-
   useEffect(() => {
     const sliced = comics.slice(0, 8);
     const list = sliced.map((url) => url.resourceURI);
