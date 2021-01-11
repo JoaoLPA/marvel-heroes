@@ -40,11 +40,14 @@
 
   .heroName {
     position: relative;
-    top: 32px;
+    top: 0;
     left: -75px;
     padding: 2px 8px;
     background-color: $black;
     margin-bottom: 60px;
+    position: relative;
+    opacity: 0;
+    animation: name-slide 0.4s ease-in forwards 0.1s;
   }
 
   .heroPortrait {
@@ -55,12 +58,24 @@
     background-position: center;
     margin-right: 35px;
     flex-shrink: 0;
+    position: relative;
+    left: -64px;
+    opacity: 0;
+    animation: portrait-slide 0.4s ease-in forwards;
   }
 
-  p {
-    max-width: 42ch;
-    line-height: 1.875rem;
+  .heroDescriptionContainer {
+    position: relative;
+    right: -50px;
+    opacity: 0;
+    animation: description-slide 0.4s ease-in 0.3s forwards;
+
+    p {
+      max-width: 42ch;
+      line-height: 1.875rem;
+    }
   }
+
 }
 
 .comicsDisplay{
@@ -144,3 +159,25 @@
     margin-right: 1rem;
   }
 }
+
+@keyframes portrait-slide {
+  100% {
+    left: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes description-slide {
+  100% {
+    right: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes name-slide {
+  100%  {
+    top: 32px;
+    opacity: 1;
+  }
+}
+

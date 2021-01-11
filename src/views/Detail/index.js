@@ -19,9 +19,7 @@ const Detail = ({ location }) => {
 
   const [heroInfo] = useState(location.state);
   const [comics] = useState([...location.state.comics.items]);
-  const [comicsInfo, setComicsInfo] = useState(
-    ...ComicsInfoMock.results
-  );
+  const [comicsInfo, setComicsInfo] = useState(undefined);
   const history = useHistory();
 
   useEffect(() => {
@@ -66,11 +64,13 @@ const Detail = ({ location }) => {
             <div className={styles.heroName}>
               <h1>{heroInfo.name}</h1>
             </div>
-            {heroInfo.description.length > 1 ? (
-              <p>{heroInfo.description}</p>
-            ) : (
-              <NoDescription />
-            )}
+            <div className={styles.heroDescriptionContainer}>
+              {heroInfo.description.length > 1 ? (
+                <p>{heroInfo.description}</p>
+              ) : (
+                <NoDescription />
+              )}
+            </div>
           </section>
         </section>
         <section className={styles.comicsSection}>
