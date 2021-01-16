@@ -3,7 +3,7 @@ import React, { createContext, useState } from 'react';
 export const GlobalContext = createContext();
 
 export const GlobalStorage = ({ children }) => {
-  const [heroesOffset, setHeroesOffset] = useState(325);
+  const [heroesOffset, setHeroesOffset] = useState(0);
   const [heroes, setHeroes] = useState(undefined);
   const [loading, setLoading] = useState(false);
 
