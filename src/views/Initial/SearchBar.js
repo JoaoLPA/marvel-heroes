@@ -3,9 +3,7 @@ import React, { useState } from 'react';
 import { ReactComponent as Search } from '../../assets/u_search.svg';
 import styles from './styles.module.scss';
 
-const SearchBar = ({ handleSubmit }) => {
-  const [searchField, setSearchField] = useState('');
-
+const SearchBar = ({ handleSubmit, searchField, setSearchField }) => {
   function handleKeyPress(event) {
     if (event.key === 'Enter') {
       handleSubmit(searchField);
@@ -33,7 +31,10 @@ const SearchBar = ({ handleSubmit }) => {
         <button onClick={handleClean} className={styles.cleanButton}>
           Limpar
         </button>
-        <button onClick={handleSubmit} className={styles.searchButton}>
+        <button
+          onClick={() => handleSubmit(searchField)}
+          className={styles.searchButton}
+        >
           Buscar
         </button>
       </div>

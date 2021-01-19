@@ -13,25 +13,31 @@ import heroesMock from './heroesMock.json';
 import SearchBar from './SearchBar';
 
 const Initial = () => {
-  const { loading, setLoading, heroes, setHeroes } = useContext(
-    GlobalContext
-  );
+  const {
+    loading,
+    setLoading,
+    heroes,
+    setHeroes,
+    setSingleHero
+  } = useContext(GlobalContext);
 
   const [heroesDisplay, setHeroesDisplay] = useState([]);
   const [page, setPage] = useState(1);
   const [heroesPerPage] = useState(5);
+  const [searchField, setSearchField] = useState('');
 
   function handleSubmit(hero) {
     event.preventDefault();
     setLoading(true);
     searchHero(hero, (error, data) => {
+      setSearchField('');
       if (error) {
         setLoading(false);
         console.log(error);
       }
       if (data) {
         setLoading(false);
-        setHeroes(data);
+        setSingleHero(data);
       }
     });
   }
@@ -61,7 +67,7 @@ const Initial = () => {
     if (heroes) {
       setHeroesDisplay(heroes.slice(indexOfFirstHero, indexOfLastHero));
     }
-  }, [heroes, page]);
+  }, [heroes, page]); //eslint-disable-line
 
   return (
     <>
@@ -71,7 +77,11 @@ const Initial = () => {
         <section className={styles.title}>
           <h1>Explore HQs com seus personagens preferidos</h1>
         </section>
-        <SearchBar handleSubmit={handleSubmit} />
+        <SearchBar
+          handleSubmit={handleSubmit}
+          searchField={searchField}
+          setSearchField={setSearchField}
+        />
         <HeroesDisplay
           loading={loading}
           heroesDisplay={heroesDisplay}
