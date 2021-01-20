@@ -16,6 +16,7 @@ const Initial = () => {
   const {
     loading,
     setLoading,
+    heroesOffset,
     heroes,
     setHeroes,
     setSingleHero
@@ -42,20 +43,31 @@ const Initial = () => {
     });
   }
 
-  // useEffect(() => {
-  //   setLoading(true);
-  //   getHeroes(heroesOffset, (error, data) => {
-  //     if (error) {
-  //       setLoading(false);
-  //       return console.log(error);
-  //     }
-  //     if (data) {
-  //       setLoading(false);
-  //       return setHeroes(data);
-  //     }
-  //   });
-  //   return setHeroesOffset(heroesOffset);
-  // }, []); //eslint-disable-line
+  useEffect(() => {
+    setLoading(true);
+    const cachedHeroes = window.localStorage.getItem('cachedHeroes');
+
+    if (cachedHeroes) {
+      const parsedCachedHeroes = JSON.parse(cachedHeroes);
+      setHeroes(cachedHeroes);
+      return setLoading(false);
+    }
+
+    getHeroes(heroesOffset, (error, data) => {
+      if (error) {
+        setLoading(false);
+        return console.log(error);
+      }
+      if (data) {
+        window.localStorage.setItem(
+          'cachedHeroes',
+          JSON.stringify(data)
+        );
+        setHeroes(data);
+        return setLoading(false);
+      }
+    });
+  }, []); //eslint-disable-line
 
   useEffect(() => {
     setHeroes(heroesMock.results);
