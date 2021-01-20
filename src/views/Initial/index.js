@@ -1,104 +1,107 @@
 import React, { useState, useEffect, useContext } from 'react';
 import { GlobalContext } from '../../utils/GlobalContext';
-import { Link } from 'react-router-dom';
 import { getHeroes, searchHero } from '../../services/api';
 
-import { ReactComponent as Search } from '../../assets/u_search.svg';
-import { ReactComponent as ArrowLeft } from '../../assets/fi_arrow-left.svg';
-import { ReactComponent as ArrowRight } from '../../assets/fi_arrow-right.svg';
 import Header from '../../components/Header';
 import PageTitle from '../../components/PageTitle';
-import HeroCard from '../../components/HeroCard';
-import HeroCardLoading from '../../components/Loading/HeroCardLoading';
+import HeroesDisplay from './HeroesDisplay';
 
 import styles from './styles.module.scss';
+
+import SearchBar from './SearchBar';
 
 const Initial = () => {
   const {
     loading,
     setLoading,
+    heroesOffset,
+    setHeroesOffset,
     heroes,
     setHeroes,
-    heroesOffset,
-    setHeroesOffset
+    setSingleHero
   } = useContext(GlobalContext);
 
+  const [heroesDisplay, setHeroesDisplay] = useState([]);
+  const [page, setPage] = useState(1);
+  const [heroesPerPage] = useState(5);
+  const [totalPages, setTotalPages] = useState(4);
   const [searchField, setSearchField] = useState('');
 
-  function handleSubmit() {
+  function handleSubmit(hero) {
     event.preventDefault();
     setLoading(true);
-    searchHero(searchField, (error, data) => {
+    searchHero(hero, (error, data) => {
+      setSearchField('');
       if (error) {
         setLoading(false);
         console.log(error);
-      }
-      if (data) {
+      } else if (data) {
         setLoading(false);
-        setHeroes(data);
-      }
-    });
-  }
-
-  function handleKeyPress(event) {
-    if (event.key === 'Enter') {
-      handleSubmit();
-    }
-  }
-
-  function handleClean() {
-    event.preventDefault();
-    setSearchField('');
-  }
-
-  function handleForwardPagination() {
-    setLoading(true);
-    if (heroesOffset === 0) {
-      setHeroesOffset(5);
-    } else {
-      setHeroesOffset((value) => value + 5);
-    }
-    getHeroes(heroesOffset, (error, data) => {
-      if (error) {
-        setLoading(false);
-        return console.log(error);
-      }
-      if (data) {
-        setLoading(false);
-        return setHeroes(data);
-      }
-    });
-  }
-
-  function handleBackwardPagination() {
-    setLoading(true);
-    setHeroesOffset((value) => value - 5);
-    getHeroes(heroesOffset, (error, data) => {
-      if (error) {
-        setLoading(false);
-        return console.log(error);
-      }
-      if (data) {
-        setLoading(false);
-        return setHeroes(data);
+        setSingleHero(data);
       }
     });
   }
 
   useEffect(() => {
     setLoading(true);
+
+    const cachedHeroes = window.localStorage.getItem('cachedHeroes');
+
+    if (cachedHeroes) {
+      const parsedCachedHeroes = JSON.parse(cachedHeroes);
+      setHeroes(parsedCachedHeroes);
+      setTotalPages(
+        Math.ceil(parsedCachedHeroes.length / heroesPerPage)
+      );
+      return setLoading(false);
+    }
+
     getHeroes(heroesOffset, (error, data) => {
       if (error) {
         setLoading(false);
         return console.log(error);
-      }
-      if (data) {
-        setLoading(false);
-        return setHeroes(data);
+      } else if (data) {
+        window.localStorage.setItem(
+          'cachedHeroes',
+          JSON.stringify(data)
+        );
+        setHeroes(data);
+        setTotalPages(Math.ceil(data.length / heroesPerPage));
+        return setLoading(false);
       }
     });
-    return setHeroesOffset(heroesOffset);
   }, []); //eslint-disable-line
+
+  useEffect(() => {
+    if (page === totalPages) {
+      setLoading(true);
+      const newOffset = heroesOffset + 20;
+      getHeroes(newOffset, (error, data) => {
+        if (error) {
+          setLoading(false);
+          return console.log(error);
+        } else if (data) {
+          const updatedHeroes = [...heroes, ...data];
+          window.localStorage.setItem(
+            'cachedHeroes',
+            JSON.stringify(updatedHeroes)
+          );
+          setHeroes(updatedHeroes);
+          setTotalPages(totalPages + 4);
+          setHeroesOffset(newOffset);
+          return setLoading(false);
+        }
+      });
+    }
+  }, [page, totalPages]); //eslint-disable-line
+
+  const indexOfLastHero = page * heroesPerPage;
+  const indexOfFirstHero = indexOfLastHero - heroesPerPage;
+  useEffect(() => {
+    if (heroes) {
+      setHeroesDisplay(heroes.slice(indexOfFirstHero, indexOfLastHero));
+    }
+  }, [heroes, page]); //eslint-disable-line
 
   return (
     <>
@@ -108,64 +111,17 @@ const Initial = () => {
         <section className={styles.title}>
           <h1>Explore HQs com seus personagens preferidos</h1>
         </section>
-        <form className={styles.heroSearch}>
-          <div className={styles.iconWrapper}>
-            <input
-              type="text"
-              value={searchField}
-              onChange={({ target }) => setSearchField(target.value)}
-              onKeyPress={(event) => handleKeyPress(event)}
-              placeholder="Buscar personagem"
-            />
-            <Search />
-          </div>
-          <div className={styles.buttonContainer}>
-            <button
-              onClick={handleClean}
-              className={styles.cleanButton}
-            >
-              Limpar
-            </button>
-            <button
-              onClick={handleSubmit}
-              className={styles.searchButton}
-            >
-              Buscar
-            </button>
-          </div>
-        </form>
-        <div className={styles.cardContainer}>
-          {loading ? (
-            <HeroCardLoading />
-          ) : (
-            heroes &&
-            heroes.map((hero) => (
-              <Link
-                to={{
-                  pathname: `/details/${hero.id}`,
-                  state: { ...hero }
-                }}
-                key={hero.id}
-              >
-                <HeroCard
-                  thumb={hero.thumbnail.path}
-                  name={hero.name}
-                />
-              </Link>
-            ))
-          )}
-        </div>
-        <div className={styles.pagination}>
-          <button
-            onClick={handleBackwardPagination}
-            disabled={heroesOffset < 5}
-          >
-            <ArrowLeft />
-          </button>
-          <button onClick={handleForwardPagination}>
-            <ArrowRight />
-          </button>
-        </div>
+        <SearchBar
+          handleSubmit={handleSubmit}
+          searchField={searchField}
+          setSearchField={setSearchField}
+        />
+        <HeroesDisplay
+          loading={loading}
+          heroesDisplay={heroesDisplay}
+          page={page}
+          setPage={setPage}
+        />
       </div>
     </>
   );
